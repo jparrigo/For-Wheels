@@ -1,0 +1,36 @@
+#root {
+  margin: 0 auto;
+}
+
+.inicio-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #2F2F2F;
+  border-radius: 20px;
+  padding: 120px;
+}
+
+.inicio-div p {
+  width: 426px;
+}
+
+.inicio-div button {
+  border-style: none;
+  padding: 10px 40px;
+  border-radius: 6px;
+  background-color: #99E31F;
+  color: #2F2F2F;
+  font-weight: bold;
+  cursor: pointer;
+  transform: scale(1);
+  transition-duration: 1s;
+}
+
+.inicio-div button:hover {
+  color: #668733;
+  transform: scale(1.2);
+  transition-duration: 1s;
+}
