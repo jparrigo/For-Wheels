@@ -1,0 +1,10 @@
+.saves-button {
+  height: 35px;
+  padding: 5px;
+  background-color: #2F2F2F;
+  border-width: 0;
+  border-radius: 6px;
+  text-align: left;
+  color: #898989;
+  margin-bottom: 10px;
+}
