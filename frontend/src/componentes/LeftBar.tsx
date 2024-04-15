@@ -18,7 +18,7 @@ function LeftBar() {
             sx={{
               justifyContent: "left",
               textTransform: "none",
-              fontSize: 15
+              fontSize: 15,
             }}
           >
             Voltar
@@ -32,7 +32,7 @@ function LeftBar() {
             sx={{
               justifyContent: "left",
               textTransform: "none",
-              fontSize: 15
+              fontSize: 15,
             }}
           >
             Nova Procura
