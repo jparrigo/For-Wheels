@@ -13,7 +13,7 @@ const sliderTamanho = [{
 }]
 function Filtro() {
   return (
-    <>
+    <main className='filtro-main'>
     <Box sx={{width: 300}}>
       <Slider
         aria-label="Temperature"
@@ -28,7 +28,7 @@ function Filtro() {
         color='success'
       />
       </Box>
-    </>
+    </main>
   )
 }
 
