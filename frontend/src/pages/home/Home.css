@@ -1,8 +1,6 @@
-.home-div {
+.home-nav {
   display: grid;
   grid-template-columns: 0fr 1fr;
-}
-
-.home-div section {
-  width: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
