@@ -1,46 +1,19 @@
 import "./Forms.css";
-import { Slider } from "@mui/material";
-import Box from "@mui/material/Box";
 import logo from "../assets/logo.png";
-
-const sliderTamanho = [
-  {
-    value: 0,
-    label: "Midsize",
-  },
-  {
-    value: 1,
-    label: "Compact",
-  },
-  {
-    value: 2,
-    label: "Large",
-  },
-];
+import Field from "./Field";
 
 export default function Forms() {
   return (
     <div className="forms-div">
       <div className="forms-logo">
-        <img src={logo} />
+        <img src={logo} width={100} />
+        <span className="forms-text">
+          Qual carro está procurando desta vez?
+        </span>
       </div>
       <div className="forms-fields">
-        <Box sx={{ width: 300 }}>
-          <Slider
-            aria-label="Temperature"
-            defaultValue={0}
-            getAriaValueText={(value) => `${value}`}
-            valueLabelDisplay="off"
-            shiftStep={0}
-            step={1}
-            marks={sliderTamanho}
-            min={0}
-            max={2}
-            sx={{
-              color: "white",
-            }}
-          />
-        </Box>
+        <Field type='price' title="Faixa de preço do veículo" />
+        <Field type='size' title="Tamanho" />
       </div>
     </div>
   );
