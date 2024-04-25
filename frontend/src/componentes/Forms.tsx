@@ -1,6 +1,7 @@
 import "./Forms.css";
 import logo from "../assets/logo.png";
-import Field from "./Field";
+import FieldSlider from "./FieldSlider";
+import FieldTextInput from "./FieldTextInput";
 
 export default function Forms() {
   return (
@@ -12,8 +13,12 @@ export default function Forms() {
         </span>
       </div>
       <div className="forms-fields">
-        <Field type='price' title="Faixa de preço do veículo" />
-        <Field type='size' title="Tamanho" />
+        <FieldTextInput
+          title="Faixa de preço do veículo"
+          firstText="de"
+          secondText="até"
+        />
+        <FieldSlider title="Tamanho" />
       </div>
     </div>
   );
