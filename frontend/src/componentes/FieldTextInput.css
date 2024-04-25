@@ -1,5 +1,6 @@
 .content-fieldTextInput {
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 10px;
   display: flex;
@@ -8,13 +9,18 @@
   margin-left: 30px;
   width: fit-content;
   height: 45px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   margin-top: 20px;
+}
+
+.input-fieldTextInput {
+  display: flex;
 }
 
 .text-fieldTextInput {
   display: flex;
   margin-right: 30px;
+  margin-bottom: 10px;
   font-size: 20px;
   color: black;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
