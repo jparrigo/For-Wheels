@@ -22,9 +22,9 @@
 }
 
 .forms-fields {
-  background-color: #898989;
+  background-color: #222222;
   border-radius: 10px;
-  width: 1000px;
-  height: 360px;
-  overflow-y: auto;
+  padding: 20px;
+  height: 500px;
+  overflow-y: scroll;
 }
