@@ -1,0 +1,32 @@
+.card-section {
+  width: 20%;
+  margin: 20px;
+  justify-content: space-around;
+  background-color: gray;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+}
+
+.card-content {
+  text-align: center;
+  height: 200px;
+  justify-content: space-between;
+  margin-top: 25%;
+  margin-left: 20px;
+  margin-right: 20px;
+  gap: 10px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.card-title {
+  font-size: 18px;
+}
+
+.card-info {
+  text-align: start;
+}
