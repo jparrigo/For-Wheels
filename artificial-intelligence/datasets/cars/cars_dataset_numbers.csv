@@ -1,4 +1,4 @@
-index,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission Type,Driven_Wheels,Number of Doors,Vehicle Size,Vehicle Style,Popularity,MSRP,Common,Crossover,Exotic,Factory Tuner,Hatchback,High-Performance,Hybrid,Luxury,Performance,City Preference,Highway Preference
+carId,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission Type,Driven_Wheels,Number of Doors,Vehicle Size,Vehicle Style,Popularity,MSRP,Common,Crossover,Exotic,Factory Tuner,Hatchback,High-Performance,Hybrid,Luxury,Performance,City Preference,Highway Preference
 0,0,335,6,1,2,2,1,4,3916,46135,0,0,0,1,0,1,0,1,0,0,1
 1,0,300,6,1,2,2,1,5,3916,40650,0,0,0,0,0,0,0,1,1,0,1
 2,0,300,6,1,2,2,1,4,3916,36350,0,0,0,0,0,1,0,1,0,0,1
