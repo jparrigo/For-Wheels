@@ -4,8 +4,18 @@ import AddIcon from "@mui/icons-material/Add";
 import SavesButton from "../savesButton/savesButton";
 import "./LeftBar.css";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 function LeftBar() {
+  let [list, setList] = useState([]);
+  useEffect(() => {
+    let cars = localStorage.getItem("saves-cars");
+    if (cars != null) {
+      let result = JSON.parse(cars);
+      console.log(result);
+      setList(result);
+    }
+  },[])
   const navigate = useNavigate();
   return (
     <div className="leftbar-div">
@@ -44,9 +54,11 @@ function LeftBar() {
 
         <div className="saves-div">
           <span className="saves-text">Salvos</span>
-          <SavesButton title="Onix RS" />
-          <SavesButton title="Limozine 3 portas" />
-          <SavesButton title="Polo" />
+          {
+            list.map((item: any,i) => {
+              return <SavesButton key={i} title={item.estilo} />
+            })
+          }
         </div>
       </div>
     </div>
