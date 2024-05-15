@@ -1,22 +1,17 @@
 .card-section {
-  width: 20%;
-  margin: 20px;
-  justify-content: space-around;
-  background-color: #101010;
+  justify-content: space-between;
+  background-color: #242424;
   border-radius: 5px;
-  border-width: 1px;
-  border-color: #303030;
+  border-width: 2px;
+  border-color: #606060;
   border-style: solid;
+  width: 14vw;
+  height: 50vh;
 }
 
 .card-content {
-  text-align: center;
-  height: 200px;
-  justify-content: space-between;
-  margin-top: 25%;
-  margin-left: 20px;
-  margin-right: 20px;
-  gap: 10px;
+  text-align: left;
+  padding: 10px;
 }
 
 span {
