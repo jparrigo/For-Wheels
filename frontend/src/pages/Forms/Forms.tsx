@@ -183,7 +183,7 @@ export default function Forms() {
           </section>
         </div>
         <Button
-          style={{marginTop: 10, marginBottom: 20, paddingLeft: 40, paddingRight: 40, width: 'fit-content'}} 
+          style={{alignContent:'start',marginBottom: 30, marginTop: 20 , paddingLeft: 40, paddingRight: 40}} 
           type="primary" 
           size="large" 
           onClick={pesquisarCarro}>Recomendar 5 carros</Button>
