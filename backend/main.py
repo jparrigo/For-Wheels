@@ -2,6 +2,7 @@ import pandas as pd
 from flask import Flask, request, jsonify, abort
 from flask_cors import CORS, cross_origin
 from functions.cosine_similarity import get_cosine_similarity
+from functions.sample_car import get_sample_car_id
 from functions.content_based_recomendation import get_content_based_recommendation
 from models.car import Car
 
@@ -22,22 +23,39 @@ def abort_car_not_found(cars):
 @cross_origin()
 def get_recomendation():
     data = request.get_json()
+
     partial_car = Car(
-        data.min_price,
-        data.max_price,
-        data.use_preference,
-        data.size,
-        data.transmission,
-        data.fuel,
-        data.category,
-        data.style,
+        data["min_price"],
+        data["max_price"],
+        data["city_preference"],
+        data["size"],
+        data["transmission"],
+        data["fuel"],
+        data["category"],
+        data["style"],
     )
 
     abort_car_not_found(partial_car)
 
-    recommended_cars = []
+    sample_car_id = get_sample_car_id(partial_car, df_cars)
+    recommended_cars = get_content_based_recommendation(
+        sample_car_id, df_cars, cosine_sim, n_recommendation=5
+    )
 
-    return jsonify(recommended_cars), 200
+    unused_columns = [
+        "carId",
+        "Make",
+        "Model",
+        "Year",
+        "Popularity",
+        "City Preference",
+        "Highway Preference",
+    ]
+    recommended_response = recommended_cars.drop(columns=unused_columns)
+
+    response = recommended_response.to_json(orient="records")
+
+    return response, 200
 
 
 if __name__ == "__main__":
