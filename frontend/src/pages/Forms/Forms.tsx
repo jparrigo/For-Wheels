@@ -1,6 +1,6 @@
 import "./Forms.css";
 import logo from "../../assets/logo.png";
-import {Button, Checkbox, ConfigProvider, Input, Radio, Space } from "antd";
+import {Button, Checkbox, ConfigProvider, Input, Radio, Space, message } from "antd";
 import { useState } from "react";
 import LeftBar from "../../componentes/LeftBar/LeftBar";
 import { useNavigate } from "react-router-dom";
@@ -66,24 +66,28 @@ export default function Forms() {
   const navigate = useNavigate();
 
   function pesquisarCarro() {
-    let precoList = [precoDe,precoAte]
-    if (Number.isNaN(precoDe)) {
-      precoList[0] = 0;
-    } else if (Number.isNaN(precoAte)) {
-      precoList[1] = 0;
-    }
+    if (precoDe>precoAte || Number.isNaN(precoAte) || precoDe < 0 || precoAte < 0) {
+      message.warning('Insira a Faixa de Preço corretamente.');
 
-    const carro = {
-      preco: precoList,
-      preferencia: preferenciaDeUsoState,
-      tamanho: tamanhoState,
-      transmissao: transmissaoState,
-      combustivel: combustivelState,
-      categoria: categoriaState,
-      estilo: estiloState
+    } else {
+      const precoList = [precoDe,precoAte]
+
+      if (Number.isNaN(precoDe)) {
+        precoList[0] = 0;
+      }
+
+      const carro = {
+        preco: precoList,
+        preferencia: preferenciaDeUsoState,
+        tamanho: tamanhoState,
+        transmissao: transmissaoState,
+        combustivel: combustivelState,
+        categoria: categoriaState,
+        estilo: estiloState
+      }
+      console.log(carro);
+      navigate('/resultado');
     }
-    console.log(carro);
-    navigate('/resultado');
   }
 
   return (
