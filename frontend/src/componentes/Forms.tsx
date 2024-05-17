@@ -1,11 +1,18 @@
 import "./Forms.css";
 import logo from "../assets/logo.png";
-import { Checkbox, ConfigProvider, Input, Radio, Space } from "antd";
+import { Checkbox, ConfigProvider, Input, Radio, RadioChangeEvent, Space } from "antd";
+import { useState } from "react";
 
 const preferenciaDeUso = [
   { label: "Estrada", value: "highway mpg" },
   { label: "Cidade", value: "city mpg" },
 ];
+
+const tamanho = [
+  { label: "Pequeno", value: "midsize" },
+  { label: "Médio", value: "compact" },
+  { label: "Grande", value: "large" },
+]
 
 const transmissao = [
   { label: "Automatico", value: "AUTOMATIC" },
@@ -45,6 +52,13 @@ const estilo = [
 ];
 
 export default function Forms() {
+  const [preferenciaDeUsoState, setPreferenciaDeUsoState] = useState('highway mpg')
+  const [tamanhoState, setTamanhoState] = useState('midsize')
+  const [transmissaoState, setTransmissaoState] = useState('AUTOMATIC')
+  const [combustivelState, setCombustivelState] = useState('gasolina')
+  const [categoriaState, setCategoriaState] = useState('Common')
+  const [estiloState, setEstiloState] = useState('Sedan')
+
   return (
     <div className="forms-div">
       <div className="forms-logo">
@@ -64,25 +78,34 @@ export default function Forms() {
         <section>
           <h1>Preferência de uso</h1>
           <ConfigProvider theme={{ token: { colorText: "#FFFFFF" } }}>
-            <Checkbox.Group
-              defaultValue={["highway mpg"]}
+            <Radio.Group
+              onChange={({target: { value }}) => {
+                setPreferenciaDeUsoState(value);
+              }}
+              value={preferenciaDeUsoState}
               options={preferenciaDeUso}
             />
           </ConfigProvider>
         </section>
         <section>
           <h1>Tamanho</h1>
-          <Radio.Group value="midsize">
-            <Radio.Button value="midsize">Pequeno</Radio.Button>
-            <Radio.Button value="compact">Médio</Radio.Button>
-            <Radio.Button value="large">Grande</Radio.Button>
-          </Radio.Group>
+          <ConfigProvider theme={{ token: { colorText: "#FFFFFF" } }}>
+            <Radio.Group
+              onChange={({target: { value }}) => {
+                setTamanhoState(value);
+              }} 
+              value={tamanhoState} 
+              options={tamanho}/>
+          </ConfigProvider>
         </section>
         <section>
           <h1>Transmissão</h1>
           <ConfigProvider theme={{ token: { colorText: "#FFFFFF" } }}>
-            <Checkbox.Group
-              defaultValue={["AUTOMATIC"]}
+            <Radio.Group
+              onChange={({target: { value }}) => {
+                setTransmissaoState(value);
+              }}
+              value={transmissaoState}
               options={transmissao}
             />
           </ConfigProvider>
@@ -90,19 +113,34 @@ export default function Forms() {
         <section>
           <h1>Combustível</h1>
           <ConfigProvider theme={{ token: { colorText: "#FFFFFF" } }}>
-            <Checkbox.Group defaultValue={["gasolina"]} options={combustivel} />
+            <Radio.Group
+              onChange={({target: { value }}) => {
+                setCombustivelState(value);
+              }}
+              value={combustivelState} 
+              options={combustivel} />
           </ConfigProvider>
         </section>
         <section>
           <h1>Categoria</h1>
           <ConfigProvider theme={{ token: { colorText: "#FFFFFF" } }}>
-            <Checkbox.Group defaultValue={["comum"]} options={categoria} />
+            <Radio.Group
+              onChange={({target: { value }}) => {
+                setCategoriaState(value);
+              }}
+              value={categoriaState} 
+              options={categoria} />
           </ConfigProvider>
         </section>
         <section>
           <h1>Estilo</h1>
           <ConfigProvider theme={{ token: { colorText: "#FFFFFF" } }}>
-            <Checkbox.Group defaultValue={["Sedan"]} options={estilo} />
+            <Radio.Group
+              onChange={({target: { value }}) => {
+                setEstiloState(value);
+              }}
+              value={estiloState} 
+              options={estilo} />
           </ConfigProvider>
         </section>
         <h1>Parte Avançada</h1>
