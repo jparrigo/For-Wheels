@@ -12,7 +12,6 @@ function LeftBar() {
     let cars = localStorage.getItem("saves-cars");
     if (cars != null) {
       let result = JSON.parse(cars);
-      console.log(result);
       setList(result);
     }
   },[])
@@ -37,6 +36,7 @@ function LeftBar() {
             Voltar
           </Button>
           <Button
+            onClick={() => navigate('/forms')}
             className="button"
             variant="contained"
             size="small"
@@ -56,7 +56,8 @@ function LeftBar() {
           <span className="saves-text">Salvos</span>
           {
             list.map((item: any,i) => {
-              return <SavesButton key={i} title={item.estilo} />
+              return <SavesButton key={i} title={item.estilo} listPosition={i} callback={(value: any) => setList(value)
+              } />
             })
           }
         </div>

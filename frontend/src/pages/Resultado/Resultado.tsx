@@ -15,11 +15,11 @@ export default function Resultado() {
           </span>
         </div>
         <div className="resultado-div">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Card nome="Carro 1"/>
+          <Card nome="Carro 2"/>
+          <Card nome="Carro 3"/>
+          <Card nome="Carro 4"/>
+          <Card nome="Carro 5"/>
         </div>
       </section>
     </nav>
