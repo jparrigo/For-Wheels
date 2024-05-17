@@ -1,6 +1,11 @@
 import "./Card.css";
 
-export default function Card() {
+interface CardProps {
+  nome?: string,
+
+}
+
+export default function Card(props: CardProps) {
   return (
     <section className="card-section">
       <div className="card-content">

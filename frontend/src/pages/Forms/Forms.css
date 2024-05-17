@@ -1,10 +1,10 @@
 .forms-div {
   display: flex;
-  height: 700px;
   flex-direction: column;
-  margin-top: 30px;
-  align-items: center;
-  justify-content: start;
+  height: 100vh;
+  padding-left: 40px;
+  padding-right: 40px;
+  justify-content: center;
 }
 
 .forms-logo {
@@ -13,21 +13,17 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
+  margin-top: 20px;
 }
 
 .forms-text {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row;
   font-size: 18px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 20px;
 }
 
 .forms-fields {
   background-color: #222222;
   border-radius: 10px;
   padding: 20px;
-  width: 600px;
   overflow-y: scroll;
 }

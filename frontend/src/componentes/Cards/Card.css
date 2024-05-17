@@ -2,10 +2,10 @@
   width: 20%;
   margin: 20px;
   justify-content: space-around;
-  background-color: gray;
+  background-color: #101010;
   border-radius: 5px;
-  border-width: 2px;
-  border-color: white;
+  border-width: 1px;
+  border-color: #303030;
   border-style: solid;
 }
 

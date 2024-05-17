@@ -4,6 +4,7 @@ import {Button, Checkbox, ConfigProvider, Input, Radio, Space, message } from "a
 import { useState } from "react";
 import LeftBar from "../../componentes/LeftBar/LeftBar";
 import { useNavigate } from "react-router-dom";
+import setListCarsSaves from "../../assets/functions/setListCarsSaves";
 
 const preferenciaDeUso = [
   { label: "Estrada", value: "highway mpg" },
@@ -85,7 +86,7 @@ export default function Forms() {
         categoria: categoriaState,
         estilo: estiloState
       }
-      console.log(carro);
+      setListCarsSaves(carro);
       navigate('/resultado');
     }
   }
@@ -180,25 +181,9 @@ export default function Forms() {
                 options={estilo} />
             </ConfigProvider>
           </section>
-          <h1>Parte Avançada</h1>
-          <section>
-            <h1>Marca</h1>
-          </section>
-          <section>
-            <h1>Ano</h1>
-          </section>
-          <section>
-            <h1>Potência em HP</h1>
-          </section>
-          <section>
-            <h1>Direção</h1>
-          </section>
-          <section>
-            <h1>Cilíndros</h1>
-          </section>
         </div>
         <Button
-          style={{marginTop: 10, paddingLeft: 40, paddingRight: 40}} 
+          style={{marginTop: 10, marginBottom: 20, paddingLeft: 40, paddingRight: 40, width: 'fit-content'}} 
           type="primary" 
           size="large" 
           onClick={pesquisarCarro}>Recomendar 5 carros</Button>
