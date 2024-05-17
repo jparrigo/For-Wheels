@@ -1,5 +1,8 @@
 .forms-div {
+  display: grid;
   margin: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 .forms-logo {
@@ -7,8 +10,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 35px;
-  margin-right: 100px;
 }
 
 .forms-text {
@@ -21,6 +22,8 @@
 }
 
 .forms-fields {
+  background-color: #898989;
+  border-radius: 10px;
   width: 1000px;
   height: 360px;
   overflow-y: auto;
