@@ -1,7 +1,5 @@
 .forms-div {
-  padding: 30px;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin: 30px;
 }
 
 .forms-logo {
@@ -9,8 +7,10 @@
   flex-direction: col;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  margin-right: 50px;
 }
 
-.forms-field {
+.forms-fields {
+  padding-left: 70px;
 }

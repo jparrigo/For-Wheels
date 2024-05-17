@@ -1,4 +1,4 @@
-import "./Filtro.css";
+import "./Forms.css";
 import { Slider } from "@mui/material";
 import Box from "@mui/material/Box";
 import logo from "../assets/logo.png";
@@ -30,13 +30,15 @@ export default function Forms() {
             aria-label="Temperature"
             defaultValue={0}
             getAriaValueText={(value) => `${value}`}
-            valueLabelDisplay="auto"
+            valueLabelDisplay="off"
             shiftStep={0}
             step={1}
             marks={sliderTamanho}
             min={0}
             max={2}
-            color="success"
+            sx={{
+              color: "white",
+            }}
           />
         </Box>
       </div>
