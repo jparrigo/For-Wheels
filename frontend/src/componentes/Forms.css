@@ -4,13 +4,24 @@
 
 .forms-logo {
   display: flex;
-  flex-direction: col;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
-  margin-right: 50px;
+  margin-bottom: 35px;
+  margin-right: 100px;
+}
+
+.forms-text {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .forms-fields {
-  padding-left: 70px;
+  width: 1000px;
+  height: 360px;
+  overflow-y: auto;
 }
