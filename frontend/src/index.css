@@ -20,3 +20,10 @@ body {
   place-items: center;
   min-height: 100vh;
 }
+
+.home-nav {
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+  width: 100vw;
+  height: 100vh;
+}

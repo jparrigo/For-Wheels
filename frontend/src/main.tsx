@@ -3,7 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Inicio from "./pages/inicio/Inicio.tsx";
-import Home from "./pages/home/Home.tsx";
+import Forms from "./pages/Forms/Forms.tsx";
+import Resultado from "./pages/Resultado/Resultado.tsx";
 
 const router = createBrowserRouter([
   {
@@ -11,9 +12,13 @@ const router = createBrowserRouter([
     element: <Inicio />,
   },
   {
-    path: "/home",
-    element: <Home />,
+    path: "/forms",
+    element: <Forms />,
   },
+  {
+    path: "/resultado",
+    element: <Resultado />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

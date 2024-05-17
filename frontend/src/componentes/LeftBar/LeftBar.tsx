@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import UndoIcon from "@mui/icons-material/Undo";
 import AddIcon from "@mui/icons-material/Add";
-import SavesButton from "./savesButton";
+import SavesButton from "../savesButton/savesButton";
 import "./LeftBar.css";
 import { useNavigate } from "react-router-dom";
 
@@ -12,7 +12,7 @@ function LeftBar() {
       <div className="content-div">
         <div className="buttons-div">
           <Button
-            onClick={() => navigate('/')}
+            onClick={() => navigate(-1)}
             className="button"
             variant="contained"
             size="small"

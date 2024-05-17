@@ -1,10 +1,12 @@
 import "./Resultado.css";
 import logo from "../../assets/logo.png";
-import Card from "./componentes/Card";
+import Card from "../../componentes/Cards/Card";
+import LeftBar from "../../componentes/LeftBar/LeftBar";
 
 export default function Resultado() {
   return (
-    <>
+    <nav className="home-nav">
+      <LeftBar />
       <section className="resultado-sec">
         <div className="resultado-logo">
           <img src={logo} width={60} />
@@ -20,6 +22,6 @@ export default function Resultado() {
           <Card />
         </div>
       </section>
-    </>
+    </nav>
   );
 }
