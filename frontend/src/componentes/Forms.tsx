@@ -1,6 +1,6 @@
 import "./Forms.css";
 import logo from "../assets/logo.png";
-import { Checkbox, ConfigProvider, Input, Radio, RadioChangeEvent, Space } from "antd";
+import {ConfigProvider, Input, Radio, Space } from "antd";
 import { useState } from "react";
 
 const preferenciaDeUso = [
