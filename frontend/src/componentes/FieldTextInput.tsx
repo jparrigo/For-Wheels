@@ -31,40 +31,42 @@ export default function FieldTextInput(props: {
   return (
     <Box className="content-fieldTextInput">
       <span className="text-fieldTextInput">{title}</span>
-      <CssTextField
-        label={firstText}
-        id="custom-css-outlined-input"
-        size="small"
-        sx={{
-          width: 80,
-        }}
-      />
-      <span
-        className="text-fieldTextInput"
-        style={{ color: "#000000", marginLeft: 6 }}
-      >
-        R$
-      </span>
-      {secondText != undefined ? (
-        <>
-          <CssTextField
-            label={secondText}
-            id="custom-css-outlined-input"
-            size="small"
-            sx={{
-              width: 80,
-            }}
-          />
-          <span
-        className="text-fieldTextInput"
-        style={{ color: "#000000", marginLeft: 6 }}
-      >
-        R$
-      </span>
-        </>
-      ) : (
-        ""
-      )}
+      <Box className="input-fieldTextInput">
+        <CssTextField
+          label={firstText}
+          id="custom-css-outlined-input"
+          size="small"
+          sx={{
+            width: 80,
+          }}
+        />
+        <span
+          className="text-fieldTextInput"
+          style={{ color: "#000000", marginLeft: 6 }}
+        >
+          R$
+        </span>
+        {secondText != undefined ? (
+          <>
+            <CssTextField
+              label={secondText}
+              id="custom-css-outlined-input"
+              size="small"
+              sx={{
+                width: 80,
+              }}
+            />
+            <span
+          className="text-fieldTextInput"
+          style={{ color: "#000000", marginLeft: 6 }}
+        >
+          R$
+        </span>
+          </>
+        ) : (
+          ""
+        )}
+      </Box>
     </Box>
   );
 }

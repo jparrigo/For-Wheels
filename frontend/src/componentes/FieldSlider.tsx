@@ -34,6 +34,7 @@ export default function FieldSlider(props: { title: string }) {
         max={2}
         track={false}
         sx={{
+          display: 'flex',
           color: "white",
           width: 350,
         }}
