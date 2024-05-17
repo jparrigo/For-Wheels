@@ -1,0 +1,16 @@
+.forms-div {
+  padding: 30px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.forms-logo {
+  display: flex;
+  flex-direction: col;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.forms-field {
+}

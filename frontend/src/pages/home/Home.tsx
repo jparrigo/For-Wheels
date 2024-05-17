@@ -1,16 +1,14 @@
-import './Home.css'
+import "./Home.css";
 import LeftBar from "../../componentes/LeftBar";
-import Filtro from '../../componentes/Filtro';
+import Forms from "../../componentes/Forms";
 
 function Home() {
   return (
-    <div className="home-div">
+    <nav className="home-nav">
       <LeftBar />
-      <section>
-        <Filtro />
-      </section>
-    </div>
-  )
+      <Forms />
+    </nav>
+  );
 }
 
 export default Home;
