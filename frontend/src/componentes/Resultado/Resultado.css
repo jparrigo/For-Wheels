@@ -1,0 +1,23 @@
+.resultado-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 60px;
+  gap: 60px;
+}
+
+.resultado-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.resultado-div {
+  background-color: #242424;
+  border-radius: 16px;
+  width: 100%;
+  height: 400px;
+}
