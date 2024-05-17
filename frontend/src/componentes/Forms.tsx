@@ -48,7 +48,7 @@ export default function Forms() {
   return (
     <div className="forms-div">
       <div className="forms-logo">
-        <img src={logo} width={100} />
+        <img src={logo} width={60} />
         <span className="forms-text">
           Qual carro está procurando desta vez?
         </span>
