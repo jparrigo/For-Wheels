@@ -1,4 +1,4 @@
-export default function setListCarsSaves(cars: object) {
+export default function setListCarsSaves(cars: Array<object>) {
   let local = localStorage.getItem("saves-cars");
   let list: Array<object> = [];
   if (local == null) {

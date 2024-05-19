@@ -2,8 +2,14 @@ import "./Resultado.css";
 import logo from "../../assets/logo.png";
 import Card from "../../componentes/Cards/Card";
 import LeftBar from "../../componentes/LeftBar/LeftBar";
+import { useLocation } from "react-router-dom";
+import { CarsListRet } from "../../assets/models/CarsListRet";
 
 export default function Resultado() {
+  const params = useLocation().state
+  const cars = params.listCars;
+  console.log(params.listCars);
+  
   return (
     <nav className="home-nav">
       <LeftBar />
@@ -15,11 +21,11 @@ export default function Resultado() {
           </span>
         </div>
         <div className="resultado-div">
-          <Card nome="Carro 1"/>
-          <Card nome="Carro 2"/>
-          <Card nome="Carro 3"/>
-          <Card nome="Carro 4"/>
-          <Card nome="Carro 5"/>
+          {
+            cars.map((item: CarsListRet,i: number) => {
+              return <Card key={i} car={item}/>
+            })
+          }
         </div>
       </section>
     </nav>

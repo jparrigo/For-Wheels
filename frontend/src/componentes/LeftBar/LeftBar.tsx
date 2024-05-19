@@ -5,6 +5,7 @@ import SavesButton from "../savesButton/savesButton";
 import "./LeftBar.css";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { CarsListRet } from "../../assets/models/CarsListRet";
 
 function LeftBar() {
   let [list, setList] = useState([]);
@@ -55,8 +56,8 @@ function LeftBar() {
         <div className="saves-div">
           <span className="saves-text">Salvos</span>
           {
-            list.map((item: any,i) => {
-              return <SavesButton key={i} title={item.estilo} listPosition={i} callback={(value: any) => setList(value)
+            list.map((item: Array<CarsListRet>,i) => {
+              return <SavesButton list={item} key={i} title={item[0].Vehicle_Title_Partial} listPosition={i} callback={(value: any) => setList(value)
               } />
             })
           }

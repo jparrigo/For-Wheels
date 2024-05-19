@@ -5,6 +5,7 @@ import { useState } from "react";
 import LeftBar from "../../componentes/LeftBar/LeftBar";
 import { useNavigate } from "react-router-dom";
 import setListCarsSaves from "../../assets/functions/setListCarsSaves";
+import axios from "axios";
 
 const preferenciaDeUso = [
   { label: "Estrada", value: "highway mpg" },
@@ -66,7 +67,7 @@ export default function Forms() {
 
   const navigate = useNavigate();
 
-  function pesquisarCarro() {
+  async function pesquisarCarro() {
     if (precoDe>precoAte || Number.isNaN(precoAte) || precoDe < 0 || precoAte < 0) {
       message.warning('Insira a Faixa de Preço corretamente.');
 
@@ -103,18 +104,11 @@ export default function Forms() {
       }
       console.log(carro);
 
-      fetch('http://127.0.0.1:5000/cars/get-recommendation', {
-        method: 'POST',
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(carro)
-      }).then((data) => {
-          console.log(data.body);
-        })
+      const getRecommendation = await axios.post('http://127.0.0.1:5000/cars/get-recommendation', carro)
+      console.log(getRecommendation.data);
 
-      //setListCarsSaves(carro);
-      navigate('/resultado');
+      setListCarsSaves(getRecommendation.data);
+      navigate('/resultado',{state: { listCars: getRecommendation.data }});
     }
   }
 
@@ -136,8 +130,6 @@ export default function Forms() {
                 setPrecoDe(valueAsNumber)
               }} placeholder="de" />
               <Input type="number" value={precoAte} onChange={({target: {valueAsNumber}}) => {
-                console.log(valueAsNumber);
-                
                 setPrecoAte(valueAsNumber)
               }} placeholder="até" />
             </Space.Compact>
