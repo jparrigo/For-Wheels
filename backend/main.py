@@ -10,7 +10,7 @@ from models.car import Car
 df_cars = pd.read_csv("./data/cars_dataset.csv")
 cosine_sim = get_cosine_similarity()
 app = Flask(__name__)
-cors = CORS(app)
+cors = CORS(app, resources={r"/cars/get-recommendation": {"origins": "*"}})
 app.config["CORS_HEADERS"] = "Content-Type"
 
 
@@ -19,10 +19,11 @@ def abort_car_not_found(cars):
         abort(400, message="No car with filters found")
 
 
-@app.route("/cars/get-recommendation", methods=["POST"])
-@cross_origin()
+@app.route("/cars/get-recommendation", methods=["POST", "OPTIONS"])
+@cross_origin(origin="*", headers=["Content-Type", "Authorization"])
 def get_recomendation():
     data = request.get_json()
+    print(data)
 
     partial_car = Car(
         data["min_price"],
@@ -53,12 +54,10 @@ def get_recomendation():
     ]
     recommended_response = recommended_cars.drop(columns=unused_columns)
 
-    response = recommended_response.to_json(orient="records")
+    recommended_response = recommended_response.to_json(orient="records")
 
-    return response, 200
+    return recommended_response, 200
 
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-# get_content_based_recommendation(car_id=1, cosine_sim_matrix=cosine_sim, n_recommendation=5)
