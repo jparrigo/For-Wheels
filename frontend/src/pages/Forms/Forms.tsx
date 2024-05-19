@@ -12,9 +12,9 @@ const preferenciaDeUso = [
 ];
 
 const tamanho = [
-  { label: "Pequeno", value: "midsize" },
-  { label: "Médio", value: "compact" },
-  { label: "Grande", value: "large" },
+  { label: "Pequeno", value: "Midsize" },
+  { label: "Médio", value: "Compact" },
+  { label: "Grande", value: "Large" },
 ]
 
 const transmissao = [
@@ -25,10 +25,10 @@ const transmissao = [
 ];
 
 const combustivel = [
-  { label: "Gasolina", value: "gasolina" },
-  { label: "Flex", value: "flex" },
+  { label: "Gasolina", value: "gasoline" },
+  { label: "Flex", value: "flex-fuel" },
   { label: "Diesel", value: "diesel" },
-  { label: "Elétrico", value: "eletrico" },
+  { label: "Elétrico", value: "eletric" },
 ];
 
 const categoria = [
@@ -58,9 +58,9 @@ export default function Forms() {
   const [precoDe, setPrecoDe] = useState(0)
   const [precoAte, setPrecoAte] = useState(0)
   const [preferenciaDeUsoState, setPreferenciaDeUsoState] = useState('highway mpg')
-  const [tamanhoState, setTamanhoState] = useState('midsize')
+  const [tamanhoState, setTamanhoState] = useState('Midsize')
   const [transmissaoState, setTransmissaoState] = useState('AUTOMATIC')
-  const [combustivelState, setCombustivelState] = useState('gasolina')
+  const [combustivelState, setCombustivelState] = useState('gasoline')
   const [categoriaState, setCategoriaState] = useState(['Common'])
   const [estiloState, setEstiloState] = useState('Sedan')
 
@@ -71,22 +71,49 @@ export default function Forms() {
       message.warning('Insira a Faixa de Preço corretamente.');
 
     } else {
-      const precoList = [precoDe,precoAte]
-
       if (Number.isNaN(precoDe)) {
-        precoList[0] = 0;
+        setPrecoDe(0)
       }
+
+      if (Number.isNaN(precoAte)) {
+        setPrecoAte(0)
+      }
+
+      const category = []
+
+      category.push(categoriaState.includes('Common') ? true : false)
+      category.push(categoriaState.includes('Crossover') ? true : false)
+      category.push(categoriaState.includes('Exotic') ? true : false)
+      category.push(categoriaState.includes('Factory Tuner') ? true : false)
+      category.push(categoriaState.includes('Hatchback') ? true : false)
+      category.push(categoriaState.includes('High-Performance') ? true : false)
+      category.push(categoriaState.includes('Hybrid') ? true : false)
+      category.push(categoriaState.includes('Luxury') ? true : false)
+      category.push(categoriaState.includes('Performance') ? true : false)
 
       const carro = {
-        preco: precoList,
-        preferencia: preferenciaDeUsoState,
-        tamanho: tamanhoState,
-        transmissao: transmissaoState,
-        combustivel: combustivelState,
-        categoria: categoriaState,
-        estilo: estiloState
+        "min_price": precoDe,
+        "max_price": precoAte,
+        "city_preference": preferenciaDeUsoState == "city mpg"? true : false,
+        "size": tamanhoState,
+        "transmission": transmissaoState,
+        "fuel": combustivelState,
+        "category": category,
+        "style": estiloState
       }
-      setListCarsSaves(carro);
+      console.log(carro);
+
+      fetch('http://127.0.0.1:5000/cars/get-recommendation', {
+        method: 'POST',
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(carro)
+      }).then((data) => {
+          console.log(data.body);
+        })
+
+      //setListCarsSaves(carro);
       navigate('/resultado');
     }
   }
