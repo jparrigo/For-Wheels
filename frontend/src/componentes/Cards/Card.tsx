@@ -15,10 +15,12 @@ export default function Card(props: CardProps) {
         </div>
         <div className="card-info">
           <span>Informações:</span>
-          <div>
-            <span>{car["Transmission Type"]}</span>
-            <span>{car["Engine HP"]}</span>
-            <span>{car["Vehicle Style"]}</span>
+          <div style={{display: "flex",justifyContent: 'center', flexDirection: 'column'}}>
+            <span>- {car["Transmission Type"]}</span>
+            <span>- {car["Engine HP"]}cv</span>
+            <span>- {car["Vehicle Style"]}</span>
+            <span>- {car["Number of Doors"]}</span>
+            <span>- {car["Transmission Type"]}</span>
           </div>
         </div>
       </div>

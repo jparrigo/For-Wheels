@@ -5,7 +5,7 @@ import { useState } from "react";
 import LeftBar from "../../componentes/LeftBar/LeftBar";
 import { useNavigate } from "react-router-dom";
 import setListCarsSaves from "../../assets/functions/setListCarsSaves";
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 
 const preferenciaDeUso = [
   { label: "Estrada", value: "highway mpg" },
@@ -13,8 +13,8 @@ const preferenciaDeUso = [
 ];
 
 const tamanho = [
-  { label: "Pequeno", value: "Midsize" },
-  { label: "Médio", value: "Compact" },
+  { label: "Pequeno", value: "Compact" },
+  { label: "Médio", value: "Midsize" },
   { label: "Grande", value: "Large" },
 ]
 
@@ -59,7 +59,7 @@ export default function Forms() {
   const [precoDe, setPrecoDe] = useState(0)
   const [precoAte, setPrecoAte] = useState(0)
   const [preferenciaDeUsoState, setPreferenciaDeUsoState] = useState('highway mpg')
-  const [tamanhoState, setTamanhoState] = useState('Midsize')
+  const [tamanhoState, setTamanhoState] = useState('Compact')
   const [transmissaoState, setTransmissaoState] = useState('AUTOMATIC')
   const [combustivelState, setCombustivelState] = useState('gasoline')
   const [categoriaState, setCategoriaState] = useState(['Common'])
@@ -103,12 +103,14 @@ export default function Forms() {
         "style": estiloState
       }
       console.log(carro);
+      try {
+        const getRecommendation = await axios.post('http://127.0.0.1:5000/cars/get-recommendation', carro)
 
-      const getRecommendation = await axios.post('http://127.0.0.1:5000/cars/get-recommendation', carro)
-      console.log(getRecommendation.data);
-
-      setListCarsSaves(getRecommendation.data);
-      navigate('/resultado',{state: { listCars: getRecommendation.data }});
+        setListCarsSaves(getRecommendation.data);
+        navigate('/resultado',{state: { listCars: getRecommendation.data }});
+      } catch (err) {
+        message.error('Não foi possível recomendar. Altera os parâmetros da busca.')
+      }
     }
   }
 
