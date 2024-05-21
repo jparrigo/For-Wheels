@@ -29,7 +29,7 @@ const combustivel = [
   { label: "Gasolina", value: "gasoline" },
   { label: "Flex", value: "flex-fuel" },
   { label: "Diesel", value: "diesel" },
-  { label: "Elétrico", value: "eletric" },
+  { label: "Elétrico", value: "electric" },
 ];
 
 const categoria = [
