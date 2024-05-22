@@ -8,7 +8,7 @@ import { CarsListRet } from "../../assets/models/CarsListRet";
 export default function Resultado() {
   const params = useLocation().state
   const cars = params.listCars;
-  console.log(params.listCars);
+
   
   return (
     <nav className="home-nav">
@@ -23,7 +23,8 @@ export default function Resultado() {
         <div className="resultado-div">
           {
             cars.map((item: CarsListRet,i: number) => {
-              return <Card key={i} car={item}/>
+              console.log(i);
+              return <Card key={i} index={i} car={item}/>
             })
           }
         </div>

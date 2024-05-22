@@ -5,6 +5,7 @@
   border-width: 2px;
   border-color: #606060;
   border-style: solid;
+  padding: 10px;
   width: 14vw;
   height: 50vh;
 }
@@ -14,14 +15,19 @@
   padding: 10px;
 }
 
-span {
-  font-weight: bold;
-}
 
 .card-title {
   font-size: 18px;
+  text-align: center;
 }
 
 .card-info {
+  margin-top: 30%;
   text-align: start;
+}
+
+.card-info-title {
+  margin-bottom: 20px;
+  font-weight: bolder;
+  font-size: 20px;
 }
