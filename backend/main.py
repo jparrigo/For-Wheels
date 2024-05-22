@@ -1,6 +1,6 @@
 import pandas as pd
 
-from flask import Flask, request, jsonify, abort, Response
+from flask import Flask, request, abort, Response
 from flask_cors import CORS, cross_origin
 
 from json import dumps
@@ -22,13 +22,13 @@ app.config["CORS_HEADERS"] = "Content-Type"
 def abort_data_not_found(data):
     if data == None:
         message = dumps({"message": "No request data found"})
-        abort(message, 404)
+        abort(Response(message, 404))
 
 
 def abort_car_not_found(cars):
     if cars == None:
         message = dumps({"message": "No car with similar filters found"})
-        abort(message, 404)
+        abort(Response(message, 404))
 
 
 @app.route("/cars/get-recommendation", methods=["POST", "OPTIONS"])
@@ -46,6 +46,9 @@ def get_recomendation():
         data["category"],
         data["style"],
     )
+
+    if partial_car.fuel == "electric" and partial_car.transmission == "AUTOMATIC":
+        partial_car.transmission = "DIRECT_DRIVE"
 
     abort_data_not_found(partial_car)
 
