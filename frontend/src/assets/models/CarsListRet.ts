@@ -11,6 +11,7 @@ export interface CarsListRet {
   "High-Performance": boolean
   "Hybrid": boolean
   "Luxury": boolean
+  "Category": string
   "MSRP": number
   "Number of Doors": number
   "Performance": boolean

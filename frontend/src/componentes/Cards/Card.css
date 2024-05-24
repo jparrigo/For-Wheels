@@ -7,7 +7,6 @@
   border-style: solid;
   padding: 10px;
   width: 14vw;
-  height: 50vh;
 }
 
 .card-content {
@@ -22,12 +21,12 @@
 }
 
 .card-info {
-  margin-top: 30%;
+  margin-top: 15%;
   text-align: start;
 }
 
 .card-info-title {
-  margin-bottom: 20px;
+  padding-bottom: 30px;
   font-weight: bolder;
   font-size: 20px;
 }

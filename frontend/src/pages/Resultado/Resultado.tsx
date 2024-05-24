@@ -9,7 +9,6 @@ export default function Resultado() {
   const params = useLocation().state
   const cars = params.listCars;
 
-  
   return (
     <nav className="home-nav">
       <LeftBar />
@@ -23,7 +22,6 @@ export default function Resultado() {
         <div className="resultado-div">
           {
             cars.map((item: CarsListRet,i: number) => {
-              console.log(i);
               return <Card key={i} index={i} car={item}/>
             })
           }
