@@ -1,6 +1,12 @@
 from numpy import random
 
 fuel_dictionary = {0: "gasoline", 1: "flex-fuel", 2: "diesel", 3: "electric"}
+transmission_dictionary = {
+    0: "AUTOMATIC",
+    1: "MANUAL",
+    2: "AUTOMATED_MANUAL",
+    3: "DIRECT_DRIVE",
+}
 
 
 def get_content_based_recommendation(
@@ -16,6 +22,7 @@ def get_content_based_recommendation(
         (car_df["MSRP"] > car.min_price)
         & (car_df["MSRP"] < car.max_price)
         & (car_df["Engine Fuel Type"] == fuel_dictionary[car.fuel])
+        & (car_df["Transmission Type"] == transmission_dictionary[car.transmission])
     ]
     rng = random.randint(100)
     car_df = car_df.sample(n=len(car_df), random_state=rng)
