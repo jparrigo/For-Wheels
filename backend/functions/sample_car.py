@@ -1,37 +1,44 @@
 from numpy import random
 
+size_dictionary = {"Midsize": 0, "Compact": 1, "Large": 2}
 
-def get_sample_car_id(car_data, data):
-    try:
-        cars_sample = data.loc[
-            (data["MSRP"] < car_data.max_price)  # Preço máximo
-            & (data["MSRP"] > car_data.min_price)  # Preço mínimo
-            & (
-                data["City Preference"] == car_data.city_preference
-            )  # True (se cidade), False (se estrada)
-            & (data["Vehicle Size"] == car_data.size)  # Compact, Midsize, Large
-            & (
-                data["Transmission Type"] == car_data.transmission
-            )  # AUTOMATIC, MANUAL, AUTOMATED_MANUAL, DIRECT_DRIVE
-            & (
-                data["Engine Fuel Type"] == car_data.fuel
-            )  # gasoline, flex-fuel, diesel, electric
-            & (data["Common"] == car_data.category[0])  # True, False
-            & (data["Crossover"] == car_data.category[1])  # True, False
-            & (data["Exotic"] == car_data.category[2])  # True, False
-            & (data["Factory Tuner"] == car_data.category[3])  # True, False
-            & (data["Hatchback"] == car_data.category[4])  # True, False
-            & (data["High-Performance"] == car_data.category[5])  # True, False
-            & (data["Hybrid"] == car_data.category[6])  # True, False
-            & (data["Luxury"] == car_data.category[7])  # True, False
-            & (data["Performance"] == car_data.category[8])  # True, False
-            & (
-                data["Vehicle Style"] == car_data.style
-            )  # Sedan, SUV, Pickup, Hatchback, Coupe, Convertible, Wagon, Minivan
-        ]
-        rng = random.randint(100)
+transmission_dictionary = {
+    "AUTOMATIC": 0,
+    "MANUAL": 1,
+    "AUTOMATED_MANUAL": 2,
+    "DIRECT_DRIVE": 3,
+}
 
-        car_selected = cars_sample.sample(n=1, random_state=rng)
-        return car_selected.index[0]
-    except:
-        return None
+fuel_dictionary = {"gasoline": 0, "flex-fuel": 1, "diesel": 2, "electric": 3}
+
+style_dictionary = {
+    "Sedan": 0,
+    "SUV": 1,
+    "Pickup": 2,
+    "Hatchback": 3,
+    "Coupe": 4,
+    "Convertible": 5,
+    "Wagon": 6,
+    "Minivan": 7,
+}
+
+boolean_dictionary = {True: 1, False: 0}
+
+
+def transform_car_values_to_numbers(car_data):
+    car_data.fuel = fuel_dictionary[car_data.fuel]
+    car_data.transmission = transmission_dictionary[car_data.transmission]
+    car_data.size = size_dictionary[car_data.size]
+    car_data.style = style_dictionary[car_data.style]
+    car_data.city_preference = boolean_dictionary[car_data.city_preference]
+    car_data.category[0] = boolean_dictionary[car_data.category[0]]
+    car_data.category[1] = boolean_dictionary[car_data.category[1]]
+    car_data.category[2] = boolean_dictionary[car_data.category[2]]
+    car_data.category[3] = boolean_dictionary[car_data.category[3]]
+    car_data.category[4] = boolean_dictionary[car_data.category[4]]
+    car_data.category[5] = boolean_dictionary[car_data.category[5]]
+    car_data.category[6] = boolean_dictionary[car_data.category[6]]
+    car_data.category[7] = boolean_dictionary[car_data.category[7]]
+    car_data.category[8] = boolean_dictionary[car_data.category[8]]
+
+    return car_data

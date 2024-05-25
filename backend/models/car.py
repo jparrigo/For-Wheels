@@ -1,3 +1,6 @@
+import numpy as np
+
+
 class Car:
     def __init__(
         self,
@@ -10,11 +13,16 @@ class Car:
         category,
         style,
     ):
-        self.min_price = min_price
-        self.max_price = max_price
-        self.city_preference = city_preference
-        self.size = size
-        self.transmission = transmission
+        self.car_id = 1714
         self.fuel = fuel
-        self.category = category
+        self.hp = 300
+        self.cylinders = 4
+        self.transmission = transmission
+        self.wheels = 0
+        self.doors = 4
+        self.size = size
         self.style = style
+        self.popularity = 1580
+        self.msrp = np.mean([max_price, min_price])
+        self.category = category
+        self.city_preference = city_preference
