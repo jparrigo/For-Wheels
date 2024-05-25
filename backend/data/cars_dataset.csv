@@ -11,8 +11,8 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 9,BMW,2 Series,2016,gasoline,240,4,AUTOMATIC,RWD,2,Compact,Convertible,34,23,3916,38650,False,False,False,False,False,False,False,True,False,True,False,2016 BMW 2 Series Convertible
 10,BMW,2 Series,2017,gasoline,335,6,AUTOMATIC,AWD,2,Compact,Coupe,31,21,3916,46450,False,False,False,True,False,True,False,True,False,False,True,2017 BMW 2 Series Coupe
 11,BMW,2 Series,2017,gasoline,335,6,AUTOMATIC,RWD,2,Compact,Convertible,32,21,3916,49050,False,False,False,True,False,True,False,True,False,False,True,2017 BMW 2 Series Convertible
-12,Chrysler,200,2015,flex-fuel,184,4,AUTOMATIC,FWD,4,Midsize,Sedan,36,23,1013,25170,False,False,False,False,False,False,False,False,False,True,False,2015 Chrysler 200 Sedan
-13,Chrysler,200,2016,flex-fuel,184,4,AUTOMATIC,FWD,4,Midsize,Sedan,36,23,1013,21995,False,False,False,False,False,False,False,False,False,True,False,2016 Chrysler 200 Sedan
+12,Chrysler,200,2015,flex-fuel,184,4,AUTOMATIC,FWD,4,Midsize,Sedan,36,23,1013,25170,True,False,False,False,False,False,False,False,False,True,False,2015 Chrysler 200 Sedan
+13,Chrysler,200,2016,flex-fuel,184,4,AUTOMATIC,FWD,4,Midsize,Sedan,36,23,1013,21995,True,False,False,False,False,False,False,False,False,True,False,2016 Chrysler 200 Sedan
 14,Chrysler,200,2017,flex-fuel,295,6,AUTOMATIC,AWD,4,Midsize,Sedan,28,18,1013,29905,False,False,False,False,False,False,False,False,True,False,True,2017 Chrysler 200 Sedan
 15,Mazda,2,2012,gasoline,100,4,MANUAL,FWD,4,Compact,Hatchback,35,29,586,16020,False,False,False,False,True,False,False,False,False,True,False,2012 Mazda 2 Hatchback
 16,Mazda,2,2013,gasoline,100,4,AUTOMATIC,FWD,4,Compact,Hatchback,34,28,586,17050,False,False,False,False,True,False,False,False,False,True,False,2013 Mazda 2 Hatchback
@@ -224,7 +224,7 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 222,Nissan,Altima,2017,gasoline,179,4,AUTOMATIC,FWD,4,Midsize,Sedan,39,27,2009,25460,True,False,False,False,False,False,False,False,False,True,False,2017 Nissan Altima Sedan
 223,Mercedes-Benz,AMG GT,2016,gasoline,503,8,AUTOMATED_MANUAL,RWD,2,Compact,Coupe,22,16,617,129900,False,False,True,True,False,True,False,True,False,False,True,2016 Mercedes-Benz AMG GT Coupe
 224,Mercedes-Benz,AMG GT,2017,gasoline,503,8,AUTOMATIC,RWD,2,Compact,Coupe,22,16,617,131200,False,False,True,True,False,True,False,True,False,False,True,2017 Mercedes-Benz AMG GT Coupe
-225,Nissan,Armada,2014,gasoline,317,8,AUTOMATIC,RWD,4,Large,SUV,19,13,2009,37590,False,False,False,False,False,False,False,False,False,False,True,2014 Nissan Armada SUV
+225,Nissan,Armada,2014,gasoline,317,8,AUTOMATIC,RWD,4,Large,SUV,19,13,2009,37590,True,False,False,False,False,False,False,False,False,False,True,2014 Nissan Armada SUV
 226,Nissan,Armada,2015,gasoline,317,8,AUTOMATIC,RWD,4,Large,SUV,19,13,2009,50780,True,False,False,False,False,False,False,False,False,False,True,2015 Nissan Armada SUV
 227,Nissan,Armada,2017,gasoline,390,8,AUTOMATIC,RWD,4,Large,SUV,19,14,2009,49650,True,False,False,False,False,False,False,False,False,False,True,2017 Nissan Armada SUV
 228,Cadillac,ATS Coupe,2015,flex-fuel,321,6,AUTOMATIC,RWD,2,Compact,Coupe,28,18,1624,48165,False,False,False,False,False,True,False,True,False,False,True,2015 Cadillac ATS Coupe Coupe
@@ -251,8 +251,8 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 249,Dodge,Avenger,2012,flex-fuel,283,6,AUTOMATIC,FWD,4,Midsize,Sedan,29,19,1851,25995,False,False,False,False,False,False,False,False,True,False,True,2012 Dodge Avenger Sedan
 250,Dodge,Avenger,2012,gasoline,173,4,AUTOMATIC,FWD,4,Midsize,Sedan,31,20,1851,21495,True,False,False,False,False,False,False,False,False,False,True,2012 Dodge Avenger Sedan
 251,Dodge,Avenger,2013,flex-fuel,283,6,AUTOMATIC,FWD,4,Midsize,Sedan,29,19,1851,25695,False,False,False,False,False,False,False,False,True,False,True,2013 Dodge Avenger Sedan
-252,Dodge,Avenger,2013,gasoline,173,4,AUTOMATIC,FWD,4,Midsize,Sedan,29,21,1851,19795,False,False,False,False,False,False,False,False,False,False,True,2013 Dodge Avenger Sedan
-253,Dodge,Avenger,2014,gasoline,173,4,AUTOMATIC,FWD,4,Midsize,Sedan,29,21,1851,20595,False,False,False,False,False,False,False,False,False,False,True,2014 Dodge Avenger Sedan
+252,Dodge,Avenger,2013,gasoline,173,4,AUTOMATIC,FWD,4,Midsize,Sedan,29,21,1851,19795,True,False,False,False,False,False,False,False,False,False,True,2013 Dodge Avenger Sedan
+253,Dodge,Avenger,2014,gasoline,173,4,AUTOMATIC,FWD,4,Midsize,Sedan,29,21,1851,20595,True,False,False,False,False,False,False,False,False,False,True,2014 Dodge Avenger Sedan
 254,Dodge,Avenger,2014,flex-fuel,283,6,AUTOMATIC,FWD,4,Midsize,Sedan,29,19,1851,25795,False,False,False,False,False,False,False,False,True,False,True,2014 Dodge Avenger Sedan
 255,Lamborghini,Aventador,2014,gasoline,700,12,AUTOMATED_MANUAL,AWD,2,Midsize,Convertible,16,10,1158,441600,False,False,True,False,False,True,False,False,False,False,True,2014 Lamborghini Aventador Convertible
 256,Lamborghini,Aventador,2014,gasoline,700,12,AUTOMATED_MANUAL,AWD,2,Midsize,Coupe,18,11,1158,397500,False,False,True,False,False,True,False,False,False,False,True,2014 Lamborghini Aventador Coupe
@@ -273,8 +273,8 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 271,Mercedes-Benz,B-Class Electric Drive,2017,electric,177,0,DIRECT_DRIVE,FWD,4,Compact,Hatchback,82,85,617,39900,False,False,False,False,True,False,False,True,False,True,False,2017 Mercedes-Benz B-Class Electric Drive Hatchback
 272,Volkswagen,Beetle Convertible,2014,gasoline,170,4,AUTOMATIC,FWD,2,Compact,Convertible,32,24,873,27295,True,False,False,False,False,False,False,False,False,True,False,2014 Volkswagen Beetle Convertible Convertible
 273,Volkswagen,Beetle Convertible,2014,gasoline,210,4,AUTOMATED_MANUAL,FWD,2,Compact,Convertible,29,23,873,31795,False,False,False,False,False,False,False,False,True,True,False,2014 Volkswagen Beetle Convertible Convertible
-274,Volkswagen,Beetle Convertible,2014,diesel,140,4,AUTOMATED_MANUAL,FWD,2,Compact,Convertible,41,28,873,32755,False,False,False,False,False,False,False,False,False,True,False,2014 Volkswagen Beetle Convertible Convertible
-275,Volkswagen,Beetle Convertible,2015,diesel,150,4,MANUAL,FWD,2,Compact,Convertible,40,30,873,30295,False,False,False,False,False,False,False,False,False,True,False,2015 Volkswagen Beetle Convertible Convertible
+274,Volkswagen,Beetle Convertible,2014,diesel,140,4,AUTOMATED_MANUAL,FWD,2,Compact,Convertible,41,28,873,32755,True,False,False,False,False,False,False,False,False,True,False,2014 Volkswagen Beetle Convertible Convertible
+275,Volkswagen,Beetle Convertible,2015,diesel,150,4,MANUAL,FWD,2,Compact,Convertible,40,30,873,30295,True,False,False,False,False,False,False,False,False,True,False,2015 Volkswagen Beetle Convertible Convertible
 276,Volkswagen,Beetle Convertible,2015,gasoline,210,4,AUTOMATED_MANUAL,FWD,2,Compact,Convertible,29,23,873,31995,False,False,False,False,False,False,False,False,True,True,False,2015 Volkswagen Beetle Convertible Convertible
 277,Volkswagen,Beetle Convertible,2015,gasoline,170,4,AUTOMATIC,FWD,2,Compact,Convertible,32,24,873,29595,True,False,False,False,False,False,False,False,False,True,False,2015 Volkswagen Beetle Convertible Convertible
 278,Volkswagen,Beetle Convertible,2016,gasoline,210,4,MANUAL,FWD,2,Compact,Convertible,31,23,873,29790,False,False,False,False,False,False,False,False,True,True,False,2016 Volkswagen Beetle Convertible Convertible
@@ -337,7 +337,7 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 335,Toyota,Camry,2017,gasoline,178,4,AUTOMATIC,FWD,4,Midsize,Sedan,33,24,2031,23070,True,False,False,False,False,False,False,False,False,True,False,2017 Toyota Camry Sedan
 336,GMC,Canyon,2012,gasoline,185,4,AUTOMATIC,RWD,4,Compact,Pickup,25,18,549,24685,True,False,False,False,False,False,False,False,False,False,True,2012 GMC Canyon Pickup
 337,GMC,Canyon,2015,gasoline,200,4,AUTOMATIC,RWD,4,Compact,Pickup,27,20,549,29730,True,False,False,False,False,False,False,False,False,False,True,2015 GMC Canyon Pickup
-338,GMC,Canyon,2016,gasoline,305,6,AUTOMATIC,RWD,4,Compact,Pickup,26,18,549,34280,False,False,False,False,False,False,False,False,False,False,True,2016 GMC Canyon Pickup
+338,GMC,Canyon,2016,gasoline,305,6,AUTOMATIC,RWD,4,Compact,Pickup,26,18,549,34280,True,False,False,False,False,False,False,False,False,False,True,2016 GMC Canyon Pickup
 339,GMC,Canyon,2016,gasoline,200,4,MANUAL,RWD,4,Compact,Pickup,26,19,549,20955,True,False,False,False,False,False,False,False,False,False,True,2016 GMC Canyon Pickup
 340,Chevrolet,Captiva Sport,2013,flex-fuel,180,4,AUTOMATIC,FWD,4,Midsize,SUV,28,20,1385,24155,False,True,False,False,False,False,False,False,False,False,True,2013 Chevrolet Captiva Sport SUV
 341,Chevrolet,Captiva Sport,2014,flex-fuel,180,4,AUTOMATIC,FWD,4,Midsize,SUV,28,20,1385,25145,False,True,False,False,False,False,False,False,False,False,True,2014 Chevrolet Captiva Sport SUV
@@ -393,7 +393,7 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 391,Chevrolet,Colorado,2012,gasoline,300,8,AUTOMATIC,RWD,4,Compact,Pickup,20,14,1385,28340,False,False,False,False,False,False,False,False,True,False,True,2012 Chevrolet Colorado Pickup
 392,Chevrolet,Colorado,2012,gasoline,185,4,MANUAL,4WD,4,Compact,Pickup,24,18,1385,23030,True,False,False,False,False,False,False,False,False,False,True,2012 Chevrolet Colorado Pickup
 393,Chevrolet,Colorado,2015,gasoline,200,4,AUTOMATIC,4WD,4,Compact,Pickup,25,19,1385,29220,True,False,False,False,False,False,False,False,False,False,True,2015 Chevrolet Colorado Pickup
-394,Chevrolet,Colorado,2016,gasoline,305,6,AUTOMATIC,4WD,4,Compact,Pickup,24,17,1385,30665,False,False,False,False,False,False,False,False,False,False,True,2016 Chevrolet Colorado Pickup
+394,Chevrolet,Colorado,2016,gasoline,305,6,AUTOMATIC,4WD,4,Compact,Pickup,24,17,1385,30665,True,False,False,False,False,False,False,False,False,False,True,2016 Chevrolet Colorado Pickup
 395,Chevrolet,Colorado,2016,gasoline,200,4,MANUAL,RWD,4,Compact,Pickup,26,19,1385,20100,True,False,False,False,False,False,False,False,False,False,True,2016 Chevrolet Colorado Pickup
 396,Bentley,Continental Flying Spur Speed,2011,gasoline,600,12,AUTOMATIC,AWD,4,Large,Sedan,17,10,520,206600,False,False,True,True,False,True,False,True,False,False,True,2011 Bentley Continental Flying Spur Speed Sedan
 397,Bentley,Continental Flying Spur Speed,2012,flex-fuel,600,12,AUTOMATIC,AWD,4,Large,Sedan,17,10,520,209600,False,False,True,True,False,True,False,True,False,False,True,2012 Bentley Continental Flying Spur Speed Sedan
@@ -452,11 +452,11 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 450,Subaru,Crosstrek,2016,gasoline,160,4,AUTOMATIC,AWD,4,Compact,SUV,34,30,640,26395,False,True,False,False,False,False,True,False,False,True,False,2016 Subaru Crosstrek SUV
 451,Subaru,Crosstrek,2016,gasoline,148,4,MANUAL,AWD,4,Compact,SUV,31,23,640,22395,False,True,False,False,False,False,False,False,False,True,False,2016 Subaru Crosstrek SUV
 452,Subaru,Crosstrek,2017,gasoline,148,4,MANUAL,AWD,4,Compact,SUV,30,23,640,22495,False,True,False,False,False,False,False,False,False,True,False,2017 Subaru Crosstrek SUV
-453,Ford,Crown Victoria,2010,flex-fuel,224,8,AUTOMATIC,RWD,4,Large,Sedan,24,16,5657,29905,False,False,False,False,False,False,False,False,False,False,True,2010 Ford Crown Victoria Sedan
-454,Ford,Crown Victoria,2011,flex-fuel,239,8,AUTOMATIC,RWD,4,Large,Sedan,24,16,5657,29905,False,False,False,False,False,False,False,False,False,False,True,2011 Ford Crown Victoria Sedan
+453,Ford,Crown Victoria,2010,flex-fuel,224,8,AUTOMATIC,RWD,4,Large,Sedan,24,16,5657,29905,True,False,False,False,False,False,False,False,False,False,True,2010 Ford Crown Victoria Sedan
+454,Ford,Crown Victoria,2011,flex-fuel,239,8,AUTOMATIC,RWD,4,Large,Sedan,24,16,5657,29905,True,False,False,False,False,False,False,False,False,False,True,2011 Ford Crown Victoria Sedan
 455,Chevrolet,Cruze Limited,2016,gasoline,138,4,MANUAL,FWD,4,Midsize,Sedan,42,28,1385,20195,True,False,False,False,False,False,False,False,False,True,False,2016 Chevrolet Cruze Limited Sedan
 456,Chevrolet,Cruze,2015,gasoline,138,4,MANUAL,FWD,4,Midsize,Sedan,36,25,1385,16170,True,False,False,False,False,False,False,False,False,True,False,2015 Chevrolet Cruze Sedan
-457,Chevrolet,Cruze,2015,diesel,148,4,AUTOMATIC,FWD,4,Midsize,Sedan,46,27,1385,25660,False,False,False,False,False,False,False,False,False,True,False,2015 Chevrolet Cruze Sedan
+457,Chevrolet,Cruze,2015,diesel,148,4,AUTOMATIC,FWD,4,Midsize,Sedan,46,27,1385,25660,True,False,False,False,False,False,False,False,False,True,False,2015 Chevrolet Cruze Sedan
 458,Chevrolet,Cruze,2016,gasoline,153,4,AUTOMATIC,FWD,4,Midsize,Sedan,42,30,1385,19120,True,False,False,False,False,False,False,False,False,True,False,2016 Chevrolet Cruze Sedan
 459,Chevrolet,Cruze,2017,gasoline,153,4,AUTOMATIC,FWD,4,Compact,Hatchback,38,29,1385,21920,False,False,False,False,True,False,False,False,False,True,False,2017 Chevrolet Cruze Hatchback
 460,Chevrolet,Cruze,2017,gasoline,153,4,AUTOMATIC,FWD,4,Midsize,Sedan,40,30,1385,21450,True,False,False,False,False,False,False,False,False,True,False,2017 Chevrolet Cruze Sedan
@@ -500,8 +500,8 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 498,Mazda,CX-9,2014,gasoline,273,6,AUTOMATIC,AWD,4,Large,SUV,22,16,586,31575,False,True,False,False,False,False,False,False,False,False,True,2014 Mazda CX-9 SUV
 499,Mazda,CX-9,2015,gasoline,273,6,AUTOMATIC,FWD,4,Large,SUV,24,17,586,35035,False,True,False,False,False,False,False,False,True,False,True,2015 Mazda CX-9 SUV
 500,Mazda,CX-9,2016,gasoline,227,4,AUTOMATIC,FWD,4,Large,SUV,28,22,586,35970,False,True,False,False,False,False,False,False,False,True,False,2016 Mazda CX-9 SUV
-501,Dodge,Dakota,2010,gasoline,210,6,AUTOMATIC,RWD,4,Compact,Pickup,20,15,1851,26325,False,False,False,False,False,False,False,False,False,False,True,2010 Dodge Dakota Pickup
-502,Dodge,Dakota,2010,flex-fuel,302,8,AUTOMATIC,4WD,4,Compact,Pickup,19,14,1851,31365,False,False,False,False,False,False,False,False,False,False,True,2010 Dodge Dakota Pickup
+501,Dodge,Dakota,2010,gasoline,210,6,AUTOMATIC,RWD,4,Compact,Pickup,20,15,1851,26325,True,False,False,False,False,False,False,False,False,False,True,2010 Dodge Dakota Pickup
+502,Dodge,Dakota,2010,flex-fuel,302,8,AUTOMATIC,4WD,4,Compact,Pickup,19,14,1851,31365,True,False,False,False,False,False,False,False,False,False,True,2010 Dodge Dakota Pickup
 503,Dodge,Dart,2014,gasoline,160,4,MANUAL,FWD,4,Midsize,Sedan,36,25,1851,16495,True,False,False,False,False,False,False,False,False,True,False,2014 Dodge Dart Sedan
 504,Dodge,Dart,2014,gasoline,184,4,AUTOMATIC,FWD,4,Midsize,Sedan,35,23,1851,22995,True,False,False,False,False,False,False,False,False,True,False,2014 Dodge Dart Sedan
 505,Dodge,Dart,2015,gasoline,184,4,MANUAL,FWD,4,Midsize,Sedan,33,23,1851,21645,True,False,False,False,False,False,False,False,False,True,False,2015 Dodge Dart Sedan
@@ -639,12 +639,12 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 637,Ford,Explorer,2016,gasoline,365,6,AUTOMATIC,AWD,4,Midsize,SUV,22,16,5657,52970,False,True,False,False,False,False,False,False,False,False,True,2016 Ford Explorer SUV
 638,Ford,Explorer,2017,gasoline,365,6,AUTOMATIC,AWD,4,Midsize,SUV,22,16,5657,53235,False,True,False,False,False,False,False,False,True,False,True,2017 Ford Explorer SUV
 639,Ford,Explorer,2017,flex-fuel,290,6,AUTOMATIC,AWD,4,Midsize,SUV,23,16,5657,33310,False,True,False,False,False,False,False,False,False,False,True,2017 Ford Explorer SUV
-640,Ford,F-150,2015,gasoline,325,6,AUTOMATIC,4WD,4,Large,Pickup,23,18,5657,45090,False,False,False,False,False,False,False,False,False,False,True,2015 Ford F-150 Pickup
-641,Ford,F-150,2015,flex-fuel,282,6,AUTOMATIC,RWD,4,Large,Pickup,25,18,5657,34205,False,False,False,False,False,False,False,False,False,False,True,2015 Ford F-150 Pickup
-642,Ford,F-150,2016,flex-fuel,282,6,AUTOMATIC,4WD,2,Large,Pickup,23,17,5657,31185,False,False,False,False,False,False,False,False,False,False,True,2016 Ford F-150 Pickup
-643,Ford,F-150,2016,gasoline,325,6,AUTOMATIC,RWD,4,Large,Pickup,26,19,5657,34165,False,False,False,False,False,False,False,False,False,False,True,2016 Ford F-150 Pickup
-644,Ford,F-150,2017,gasoline,325,6,AUTOMATIC,RWD,4,Large,Pickup,26,19,5657,31710,False,False,False,False,False,False,False,False,False,False,True,2017 Ford F-150 Pickup
-645,Ford,F-150,2017,flex-fuel,385,8,AUTOMATIC,4WD,4,Large,Pickup,21,15,5657,56260,False,False,False,False,False,False,False,False,False,False,True,2017 Ford F-150 Pickup
+640,Ford,F-150,2015,gasoline,325,6,AUTOMATIC,4WD,4,Large,Pickup,23,18,5657,45090,True,False,False,False,False,False,False,False,False,False,True,2015 Ford F-150 Pickup
+641,Ford,F-150,2015,flex-fuel,282,6,AUTOMATIC,RWD,4,Large,Pickup,25,18,5657,34205,True,False,False,False,False,False,False,False,False,False,True,2015 Ford F-150 Pickup
+642,Ford,F-150,2016,flex-fuel,282,6,AUTOMATIC,4WD,2,Large,Pickup,23,17,5657,31185,True,False,False,False,False,False,False,False,False,False,True,2016 Ford F-150 Pickup
+643,Ford,F-150,2016,gasoline,325,6,AUTOMATIC,RWD,4,Large,Pickup,26,19,5657,34165,True,False,False,False,False,False,False,False,False,False,True,2016 Ford F-150 Pickup
+644,Ford,F-150,2017,gasoline,325,6,AUTOMATIC,RWD,4,Large,Pickup,26,19,5657,31710,True,False,False,False,False,False,False,False,False,False,True,2017 Ford F-150 Pickup
+645,Ford,F-150,2017,flex-fuel,385,8,AUTOMATIC,4WD,4,Large,Pickup,21,15,5657,56260,True,False,False,False,False,False,False,False,False,False,True,2017 Ford F-150 Pickup
 646,Ferrari,F12 Berlinetta,2013,gasoline,731,12,AUTOMATED_MANUAL,RWD,2,Midsize,Coupe,16,11,2774,315888,False,False,True,False,False,True,False,False,False,False,True,2013 Ferrari F12 Berlinetta Coupe
 647,Ferrari,F12 Berlinetta,2014,gasoline,731,12,AUTOMATED_MANUAL,RWD,2,Midsize,Coupe,16,11,2774,315888,False,False,True,False,False,True,False,False,False,False,True,2014 Ferrari F12 Berlinetta Coupe
 648,Ferrari,F12 Berlinetta,2015,gasoline,731,12,AUTOMATED_MANUAL,RWD,2,Midsize,Coupe,16,11,2774,319995,False,False,True,False,False,True,False,False,False,False,True,2015 Ferrari F12 Berlinetta Coupe
@@ -676,15 +676,15 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 674,Ford,Focus ST,2015,gasoline,252,4,MANUAL,FWD,4,Compact,Hatchback,32,23,5657,24370,False,False,False,True,True,False,False,False,True,True,False,2015 Ford Focus ST Hatchback
 675,Ford,Focus ST,2016,gasoline,252,4,MANUAL,FWD,4,Compact,Hatchback,31,22,5657,24425,False,False,False,True,True,False,False,False,True,True,False,2016 Ford Focus ST Hatchback
 676,Ford,Focus ST,2017,gasoline,252,4,MANUAL,FWD,4,Compact,Hatchback,31,22,5657,24775,False,False,False,True,True,False,False,False,True,True,False,2017 Ford Focus ST Hatchback
-677,Ford,Focus,2015,flex-fuel,160,4,MANUAL,FWD,4,Compact,Sedan,36,26,5657,18460,False,False,False,False,False,False,False,False,False,True,False,2015 Ford Focus Sedan
+677,Ford,Focus,2015,flex-fuel,160,4,MANUAL,FWD,4,Compact,Sedan,36,26,5657,18460,True,False,False,False,False,False,False,False,False,True,False,2015 Ford Focus Sedan
 678,Ford,Focus,2015,flex-fuel,160,4,MANUAL,FWD,4,Compact,Hatchback,36,26,5657,18960,False,False,False,False,True,False,False,False,False,True,False,2015 Ford Focus Hatchback
 679,Ford,Focus,2015,electric,178,0,DIRECT_DRIVE,FWD,4,Compact,Hatchback,99,110,5657,29170,False,False,False,False,True,False,False,False,False,True,False,2015 Ford Focus Hatchback
-680,Ford,Focus,2016,flex-fuel,160,4,MANUAL,FWD,4,Compact,Sedan,36,26,5657,18515,False,False,False,False,False,False,False,False,False,True,False,2016 Ford Focus Sedan
+680,Ford,Focus,2016,flex-fuel,160,4,MANUAL,FWD,4,Compact,Sedan,36,26,5657,18515,True,False,False,False,False,False,False,False,False,True,False,2016 Ford Focus Sedan
 681,Ford,Focus,2016,flex-fuel,160,4,AUTOMATED_MANUAL,FWD,4,Compact,Hatchback,40,27,5657,23725,False,False,False,False,True,False,False,False,False,True,False,2016 Ford Focus Hatchback
 682,Ford,Focus,2016,electric,178,0,DIRECT_DRIVE,FWD,4,Compact,Hatchback,99,110,5657,29170,False,False,False,False,True,False,False,False,False,True,False,2016 Ford Focus Hatchback
 683,Ford,Focus,2017,flex-fuel,160,4,AUTOMATED_MANUAL,FWD,4,Compact,Hatchback,40,27,5657,21675,False,False,False,False,True,False,False,False,False,True,False,2017 Ford Focus Hatchback
 684,Ford,Focus,2017,gasoline,123,3,MANUAL,FWD,4,Compact,Sedan,42,30,5657,18175,True,False,False,False,False,False,False,False,False,True,False,2017 Ford Focus Sedan
-685,Ford,Focus,2017,flex-fuel,160,4,MANUAL,FWD,4,Compact,Sedan,36,26,5657,16775,False,False,False,False,False,False,False,False,False,True,False,2017 Ford Focus Sedan
+685,Ford,Focus,2017,flex-fuel,160,4,MANUAL,FWD,4,Compact,Sedan,36,26,5657,16775,True,False,False,False,False,False,False,False,False,True,False,2017 Ford Focus Sedan
 686,Ford,Focus,2017,electric,178,0,DIRECT_DRIVE,FWD,4,Compact,Hatchback,99,110,5657,29120,False,False,False,False,True,False,False,False,False,True,False,2017 Ford Focus Hatchback
 687,Subaru,Forester,2015,gasoline,250,4,AUTOMATIC,AWD,4,Midsize,SUV,28,23,640,33095,False,True,False,False,False,False,False,False,False,True,False,2015 Subaru Forester SUV
 688,Subaru,Forester,2015,gasoline,170,4,MANUAL,AWD,4,Midsize,SUV,29,22,640,24595,False,True,False,False,False,False,False,False,False,True,False,2015 Subaru Forester SUV
@@ -791,7 +791,7 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 789,Volkswagen,Golf R,2015,gasoline,292,4,AUTOMATED_MANUAL,AWD,4,Compact,Hatchback,30,23,873,39090,False,False,False,True,True,True,False,False,False,True,False,2015 Volkswagen Golf R Hatchback
 790,Volkswagen,Golf R,2016,gasoline,292,4,AUTOMATED_MANUAL,AWD,4,Compact,Hatchback,30,23,873,36750,False,False,False,True,True,True,False,False,False,True,False,2016 Volkswagen Golf R Hatchback
 791,Volkswagen,Golf R,2017,gasoline,292,4,AUTOMATED_MANUAL,AWD,4,Compact,Hatchback,30,23,873,36755,False,False,False,True,True,True,False,False,False,True,False,2017 Volkswagen Golf R Hatchback
-792,Volkswagen,Golf SportWagen,2015,diesel,150,4,AUTOMATED_MANUAL,FWD,4,Compact,Wagon,42,31,873,31445,False,False,False,False,False,False,False,False,False,True,False,2015 Volkswagen Golf SportWagen Wagon
+792,Volkswagen,Golf SportWagen,2015,diesel,150,4,AUTOMATED_MANUAL,FWD,4,Compact,Wagon,42,31,873,31445,True,False,False,False,False,False,False,False,False,True,False,2015 Volkswagen Golf SportWagen Wagon
 793,Volkswagen,Golf SportWagen,2015,gasoline,170,4,AUTOMATIC,FWD,4,Compact,Wagon,35,25,873,22495,True,False,False,False,False,False,False,False,False,True,False,2015 Volkswagen Golf SportWagen Wagon
 794,Volkswagen,Golf SportWagen,2016,gasoline,170,4,AUTOMATIC,FWD,4,Compact,Wagon,35,25,873,24995,True,False,False,False,False,False,False,False,False,True,False,2016 Volkswagen Golf SportWagen Wagon
 795,Volkswagen,Golf SportWagen,2017,gasoline,170,4,AUTOMATIC,FWD,4,Compact,Wagon,34,25,873,22680,True,False,False,False,False,False,False,False,False,True,False,2017 Volkswagen Golf SportWagen Wagon
@@ -799,8 +799,8 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 797,Volkswagen,Golf,2015,gasoline,170,4,MANUAL,FWD,2,Compact,Hatchback,37,25,873,19295,False,False,False,False,True,False,False,False,False,True,False,2015 Volkswagen Golf Hatchback
 798,Volkswagen,Golf,2016,gasoline,170,4,AUTOMATIC,FWD,2,Compact,Hatchback,36,25,873,20675,False,False,False,False,True,False,False,False,False,True,False,2016 Volkswagen Golf Hatchback
 799,Volkswagen,Golf,2017,gasoline,170,4,AUTOMATIC,FWD,4,Compact,Hatchback,35,25,873,20995,False,False,False,False,True,False,False,False,False,True,False,2017 Volkswagen Golf Hatchback
-800,Dodge,Grand Caravan,2015,flex-fuel,283,6,AUTOMATIC,FWD,4,Midsize,Minivan,25,17,1851,30995,False,False,False,False,False,False,False,False,False,False,True,2015 Dodge Grand Caravan Minivan
-801,Dodge,Grand Caravan,2016,flex-fuel,283,6,AUTOMATIC,FWD,4,Midsize,Minivan,25,17,1851,25095,False,False,False,False,False,False,False,False,False,False,True,2016 Dodge Grand Caravan Minivan
+800,Dodge,Grand Caravan,2015,flex-fuel,283,6,AUTOMATIC,FWD,4,Midsize,Minivan,25,17,1851,30995,True,False,False,False,False,False,False,False,False,False,True,2015 Dodge Grand Caravan Minivan
+801,Dodge,Grand Caravan,2016,flex-fuel,283,6,AUTOMATIC,FWD,4,Midsize,Minivan,25,17,1851,25095,True,False,False,False,False,False,False,False,False,False,True,2016 Dodge Grand Caravan Minivan
 802,Dodge,Grand Caravan,2017,gasoline,283,6,AUTOMATIC,FWD,4,Midsize,Minivan,25,17,1851,29395,True,False,False,False,False,False,False,False,False,False,True,2017 Dodge Grand Caravan Minivan
 803,Suzuki,Grand Vitara,2011,gasoline,166,4,AUTOMATIC,RWD,4,Compact,SUV,25,19,481,23449,False,True,False,False,False,False,False,False,False,False,True,2011 Suzuki Grand Vitara SUV
 804,Suzuki,Grand Vitara,2012,gasoline,166,4,AUTOMATIC,4WD,4,Compact,SUV,23,19,481,23949,False,True,False,False,False,False,False,False,False,False,True,2012 Suzuki Grand Vitara SUV
@@ -835,9 +835,9 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 833,HUMMER,H3,2010,gasoline,239,5,MANUAL,4WD,4,Midsize,SUV,18,14,130,33390,False,False,False,False,False,False,False,True,False,False,True,2010 HUMMER H3 SUV
 834,HUMMER,H3T,2010,flex-fuel,300,8,AUTOMATIC,4WD,4,Compact,Pickup,16,13,130,39205,False,True,False,False,False,False,False,True,False,False,True,2010 HUMMER H3T Pickup
 835,HUMMER,H3T,2010,gasoline,239,5,MANUAL,4WD,4,Compact,Pickup,18,14,130,30915,False,True,False,False,False,False,False,True,False,False,True,2010 HUMMER H3T Pickup
-836,Chevrolet,HHR,2010,flex-fuel,155,4,MANUAL,FWD,4,Compact,Wagon,32,22,1385,20030,False,False,False,False,False,False,False,False,False,True,False,2010 Chevrolet HHR Wagon
+836,Chevrolet,HHR,2010,flex-fuel,155,4,MANUAL,FWD,4,Compact,Wagon,32,22,1385,20030,True,False,False,False,False,False,False,False,False,True,False,2010 Chevrolet HHR Wagon
 837,Chevrolet,HHR,2010,gasoline,260,4,MANUAL,FWD,4,Compact,Wagon,29,21,1385,26255,False,False,False,True,False,False,False,False,True,False,True,2010 Chevrolet HHR Wagon
-838,Chevrolet,HHR,2011,flex-fuel,155,4,MANUAL,FWD,4,Compact,Wagon,32,22,1385,18720,False,False,False,False,False,False,False,False,False,True,False,2011 Chevrolet HHR Wagon
+838,Chevrolet,HHR,2011,flex-fuel,155,4,MANUAL,FWD,4,Compact,Wagon,32,22,1385,18720,True,False,False,False,False,False,False,False,False,True,False,2011 Chevrolet HHR Wagon
 839,Toyota,Highlander Hybrid,2014,gasoline,280,6,AUTOMATIC,AWD,4,Midsize,SUV,28,27,2031,47300,False,True,False,False,False,False,True,False,False,True,False,2014 Toyota Highlander Hybrid SUV
 840,Toyota,Highlander Hybrid,2015,gasoline,280,6,AUTOMATIC,AWD,4,Midsize,SUV,28,27,2031,47850,False,True,False,False,False,False,True,False,False,True,False,2015 Toyota Highlander Hybrid SUV
 841,Toyota,Highlander Hybrid,2016,gasoline,280,6,AUTOMATIC,AWD,4,Midsize,SUV,28,27,2031,50485,False,True,False,False,False,False,True,False,False,True,False,2016 Toyota Highlander Hybrid SUV
@@ -862,9 +862,9 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 860,Acura,ILX,2015,gasoline,150,4,AUTOMATIC,FWD,4,Compact,Sedan,35,24,204,31750,False,False,False,False,False,False,False,True,False,True,False,2015 Acura ILX Sedan
 861,Acura,ILX,2016,gasoline,201,4,AUTOMATED_MANUAL,FWD,4,Compact,Sedan,36,25,204,34890,False,False,False,False,False,False,False,True,False,True,False,2016 Acura ILX Sedan
 862,Acura,ILX,2017,gasoline,201,4,AUTOMATED_MANUAL,FWD,4,Compact,Sedan,35,25,204,32990,False,False,False,False,False,False,False,True,False,True,False,2017 Acura ILX Sedan
-863,Chevrolet,Impala Limited,2014,flex-fuel,300,6,AUTOMATIC,FWD,4,Large,Sedan,30,18,1385,26840,False,False,False,False,False,False,False,False,False,False,True,2014 Chevrolet Impala Limited Sedan
-864,Chevrolet,Impala Limited,2015,flex-fuel,300,6,AUTOMATIC,FWD,4,Large,Sedan,30,18,1385,26840,False,False,False,False,False,False,False,False,False,False,True,2015 Chevrolet Impala Limited Sedan
-865,Chevrolet,Impala Limited,2016,flex-fuel,300,6,AUTOMATIC,FWD,4,Large,Sedan,30,18,1385,26840,False,False,False,False,False,False,False,False,False,False,True,2016 Chevrolet Impala Limited Sedan
+863,Chevrolet,Impala Limited,2014,flex-fuel,300,6,AUTOMATIC,FWD,4,Large,Sedan,30,18,1385,26840,True,False,False,False,False,False,False,False,False,False,True,2014 Chevrolet Impala Limited Sedan
+864,Chevrolet,Impala Limited,2015,flex-fuel,300,6,AUTOMATIC,FWD,4,Large,Sedan,30,18,1385,26840,True,False,False,False,False,False,False,False,False,False,True,2015 Chevrolet Impala Limited Sedan
+865,Chevrolet,Impala Limited,2016,flex-fuel,300,6,AUTOMATIC,FWD,4,Large,Sedan,30,18,1385,26840,True,False,False,False,False,False,False,False,False,False,True,2016 Chevrolet Impala Limited Sedan
 866,Chevrolet,Impala,2015,gasoline,195,4,AUTOMATIC,FWD,4,Large,Sedan,31,21,1385,34465,True,False,False,False,False,False,False,False,False,False,True,2015 Chevrolet Impala Sedan
 867,Chevrolet,Impala,2015,flex-fuel,305,6,AUTOMATIC,FWD,4,Large,Sedan,29,19,1385,35440,False,False,False,False,False,False,False,False,True,False,True,2015 Chevrolet Impala Sedan
 868,Chevrolet,Impala,2016,flex-fuel,305,6,AUTOMATIC,FWD,4,Large,Sedan,29,19,1385,35540,False,False,False,False,False,False,False,False,True,False,True,2016 Chevrolet Impala Sedan
@@ -908,14 +908,14 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 906,Volkswagen,Jetta Hybrid,2013,gasoline,170,4,AUTOMATED_MANUAL,FWD,4,Midsize,Sedan,48,42,873,26990,False,False,False,False,False,False,True,False,False,True,False,2013 Volkswagen Jetta Hybrid Sedan
 907,Volkswagen,Jetta Hybrid,2014,gasoline,170,4,AUTOMATED_MANUAL,FWD,4,Midsize,Sedan,48,42,873,31895,False,False,False,False,False,False,True,False,False,True,False,2014 Volkswagen Jetta Hybrid Sedan
 908,Volkswagen,Jetta SportWagen,2012,gasoline,170,5,AUTOMATIC,FWD,4,Compact,Wagon,31,24,873,24210,True,False,False,False,False,False,False,False,False,True,False,2012 Volkswagen Jetta SportWagen Wagon
-909,Volkswagen,Jetta SportWagen,2012,diesel,140,4,MANUAL,FWD,4,Compact,Wagon,42,30,873,28120,False,False,False,False,False,False,False,False,False,True,False,2012 Volkswagen Jetta SportWagen Wagon
+909,Volkswagen,Jetta SportWagen,2012,diesel,140,4,MANUAL,FWD,4,Compact,Wagon,42,30,873,28120,True,False,False,False,False,False,False,False,False,True,False,2012 Volkswagen Jetta SportWagen Wagon
 910,Volkswagen,Jetta SportWagen,2013,gasoline,170,5,AUTOMATIC,FWD,4,Compact,Wagon,31,24,873,21695,True,False,False,False,False,False,False,False,False,True,False,2013 Volkswagen Jetta SportWagen Wagon
-911,Volkswagen,Jetta SportWagen,2013,diesel,140,4,AUTOMATED_MANUAL,FWD,4,Compact,Wagon,39,29,873,29495,False,False,False,False,False,False,False,False,False,True,False,2013 Volkswagen Jetta SportWagen Wagon
+911,Volkswagen,Jetta SportWagen,2013,diesel,140,4,AUTOMATED_MANUAL,FWD,4,Compact,Wagon,39,29,873,29495,True,False,False,False,False,False,False,False,False,True,False,2013 Volkswagen Jetta SportWagen Wagon
 912,Volkswagen,Jetta SportWagen,2014,gasoline,170,5,MANUAL,FWD,4,Compact,Wagon,33,23,873,20995,True,False,False,False,False,False,False,False,False,True,False,2014 Volkswagen Jetta SportWagen Wagon
-913,Volkswagen,Jetta SportWagen,2014,diesel,140,4,AUTOMATED_MANUAL,FWD,4,Compact,Wagon,39,29,873,27665,False,False,False,False,False,False,False,False,False,True,False,2014 Volkswagen Jetta SportWagen Wagon
+913,Volkswagen,Jetta SportWagen,2014,diesel,140,4,AUTOMATED_MANUAL,FWD,4,Compact,Wagon,39,29,873,27665,True,False,False,False,False,False,False,False,False,True,False,2014 Volkswagen Jetta SportWagen Wagon
 914,Volkswagen,Jetta,2015,gasoline,170,4,AUTOMATIC,FWD,4,Midsize,Sedan,37,25,873,22325,True,False,False,False,False,False,False,False,False,True,False,2015 Volkswagen Jetta Sedan
 915,Volkswagen,Jetta,2015,gasoline,210,4,MANUAL,FWD,4,Midsize,Sedan,33,23,873,29280,False,False,False,True,False,False,False,False,True,True,False,2015 Volkswagen Jetta Sedan
-916,Volkswagen,Jetta,2015,diesel,150,4,AUTOMATED_MANUAL,FWD,4,Midsize,Sedan,45,31,873,25175,False,False,False,False,False,False,False,False,False,True,False,2015 Volkswagen Jetta Sedan
+916,Volkswagen,Jetta,2015,diesel,150,4,AUTOMATED_MANUAL,FWD,4,Midsize,Sedan,45,31,873,25175,True,False,False,False,False,False,False,False,False,True,False,2015 Volkswagen Jetta Sedan
 917,Volkswagen,Jetta,2016,gasoline,150,4,AUTOMATIC,FWD,4,Midsize,Sedan,39,28,873,22325,True,False,False,False,False,False,False,False,False,True,False,2016 Volkswagen Jetta Sedan
 918,Volkswagen,Jetta,2016,gasoline,210,4,MANUAL,FWD,4,Midsize,Sedan,33,23,873,29280,False,False,False,True,False,False,False,False,True,True,False,2016 Volkswagen Jetta Sedan
 919,Volkswagen,Jetta,2016,gasoline,170,4,AUTOMATED_MANUAL,FWD,4,Midsize,Sedan,48,42,873,31120,False,False,False,False,False,False,True,False,False,True,False,2016 Volkswagen Jetta Sedan
@@ -941,7 +941,7 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 939,Suzuki,Kizashi,2013,gasoline,180,4,AUTOMATIC,FWD,4,Midsize,Sedan,30,23,481,25799,True,False,False,False,False,False,False,False,False,True,False,2013 Suzuki Kizashi Sedan
 940,Suzuki,Kizashi,2013,gasoline,185,4,MANUAL,FWD,4,Midsize,Sedan,29,20,481,19999,True,False,False,False,False,False,False,False,False,False,True,2013 Suzuki Kizashi Sedan
 941,Buick,LaCrosse,2015,gasoline,182,4,AUTOMATIC,FWD,4,Large,Sedan,36,25,155,35725,False,False,False,False,False,False,True,False,False,True,False,2015 Buick LaCrosse Sedan
-942,Buick,LaCrosse,2015,flex-fuel,304,6,AUTOMATIC,FWD,4,Large,Sedan,28,18,155,31065,False,False,False,False,False,False,False,False,False,False,True,2015 Buick LaCrosse Sedan
+942,Buick,LaCrosse,2015,flex-fuel,304,6,AUTOMATIC,FWD,4,Large,Sedan,28,18,155,31065,True,False,False,False,False,False,False,False,False,False,True,2015 Buick LaCrosse Sedan
 943,Buick,LaCrosse,2016,flex-fuel,304,6,AUTOMATIC,FWD,4,Large,Sedan,28,18,155,34065,False,False,False,False,False,False,False,False,True,False,True,2016 Buick LaCrosse Sedan
 944,Buick,LaCrosse,2017,gasoline,310,6,AUTOMATIC,FWD,4,Large,Sedan,31,21,155,36065,False,False,False,False,False,False,False,False,True,False,True,2017 Buick LaCrosse Sedan
 945,Mitsubishi,Lancer Evolution,2013,gasoline,291,4,AUTOMATED_MANUAL,AWD,4,Compact,Sedan,22,17,436,37895,False,False,False,True,False,False,False,False,True,False,True,2013 Mitsubishi Lancer Evolution Sedan
@@ -982,9 +982,9 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 980,Lexus,LS 600h L,2014,gasoline,438,8,AUTOMATIC,AWD,4,Large,Sedan,23,19,454,120060,False,False,False,False,False,True,True,True,False,False,True,2014 Lexus LS 600h L Sedan
 981,Lexus,LS 600h L,2015,gasoline,438,8,AUTOMATIC,AWD,4,Large,Sedan,23,19,454,120440,False,False,False,False,False,True,True,True,False,False,True,2015 Lexus LS 600h L Sedan
 982,Lexus,LS 600h L,2016,gasoline,438,8,AUTOMATIC,AWD,4,Large,Sedan,23,19,454,120440,False,False,False,False,False,True,True,True,False,False,True,2016 Lexus LS 600h L Sedan
-983,Buick,Lucerne,2010,flex-fuel,227,6,AUTOMATIC,FWD,4,Large,Sedan,26,17,155,35730,False,False,False,False,False,False,False,False,False,False,True,2010 Buick Lucerne Sedan
+983,Buick,Lucerne,2010,flex-fuel,227,6,AUTOMATIC,FWD,4,Large,Sedan,26,17,155,35730,True,False,False,False,False,False,False,False,False,False,True,2010 Buick Lucerne Sedan
 984,Buick,Lucerne,2010,gasoline,292,8,AUTOMATIC,FWD,4,Large,Sedan,22,15,155,42515,False,False,False,False,False,False,False,False,True,False,True,2010 Buick Lucerne Sedan
-985,Buick,Lucerne,2011,flex-fuel,227,6,AUTOMATIC,FWD,4,Large,Sedan,27,17,155,29730,False,False,False,False,False,False,False,False,False,False,True,2011 Buick Lucerne Sedan
+985,Buick,Lucerne,2011,flex-fuel,227,6,AUTOMATIC,FWD,4,Large,Sedan,27,17,155,29730,True,False,False,False,False,False,False,False,False,False,True,2011 Buick Lucerne Sedan
 986,Buick,Lucerne,2011,gasoline,292,8,AUTOMATIC,FWD,4,Large,Sedan,23,15,155,44460,False,False,False,False,False,False,False,False,True,False,True,2011 Buick Lucerne Sedan
 987,Lexus,LX 570,2015,gasoline,383,8,AUTOMATIC,4WD,4,Midsize,SUV,17,12,454,83180,False,False,False,False,False,False,False,True,False,False,True,2015 Lexus LX 570 SUV
 988,Lexus,LX 570,2016,gasoline,383,8,AUTOMATIC,4WD,4,Large,SUV,18,13,454,88880,False,False,False,False,False,False,False,True,False,False,True,2016 Lexus LX 570 SUV
@@ -1140,7 +1140,7 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 1138,Porsche,Panamera,2015,gasoline,570,8,AUTOMATED_MANUAL,AWD,4,Large,Sedan,24,15,1715,200500,False,False,False,False,False,True,False,True,False,False,True,2015 Porsche Panamera Sedan
 1139,Porsche,Panamera,2016,gasoline,520,8,AUTOMATED_MANUAL,AWD,4,Large,Sedan,24,15,1715,161100,False,False,False,False,False,True,False,True,False,False,True,2016 Porsche Panamera Sedan
 1140,Volkswagen,Passat,2015,gasoline,170,4,AUTOMATIC,FWD,4,Midsize,Sedan,36,24,873,26280,True,False,False,False,False,False,False,False,False,True,False,2015 Volkswagen Passat Sedan
-1141,Volkswagen,Passat,2015,diesel,150,4,AUTOMATED_MANUAL,FWD,4,Midsize,Sedan,42,30,873,29125,False,False,False,False,False,False,False,False,False,True,False,2015 Volkswagen Passat Sedan
+1141,Volkswagen,Passat,2015,diesel,150,4,AUTOMATED_MANUAL,FWD,4,Midsize,Sedan,42,30,873,29125,True,False,False,False,False,False,False,False,False,True,False,2015 Volkswagen Passat Sedan
 1142,Volkswagen,Passat,2016,gasoline,170,4,AUTOMATIC,FWD,4,Midsize,Sedan,38,25,873,26280,True,False,False,False,False,False,False,False,False,True,False,2016 Volkswagen Passat Sedan
 1143,Volkswagen,Passat,2016,gasoline,280,6,AUTOMATED_MANUAL,FWD,4,Midsize,Sedan,28,20,873,36835,False,False,False,False,False,False,False,False,True,False,True,2016 Volkswagen Passat Sedan
 1144,Volkswagen,Passat,2017,gasoline,280,6,AUTOMATED_MANUAL,FWD,4,Midsize,Sedan,28,20,873,29295,False,False,False,False,False,False,False,False,True,False,True,2017 Volkswagen Passat Sedan
@@ -1235,8 +1235,8 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 1233,Audi,R8,2015,gasoline,430,8,AUTOMATED_MANUAL,AWD,2,Compact,Coupe,23,14,3105,124900,False,False,False,False,False,True,False,True,False,False,True,2015 Audi R8 Coupe
 1234,Audi,R8,2015,gasoline,525,10,MANUAL,AWD,2,Compact,Convertible,19,12,3105,166100,False,False,False,False,False,True,False,True,False,False,True,2015 Audi R8 Convertible
 1235,Audi,R8,2017,gasoline,540,10,AUTOMATED_MANUAL,AWD,2,Compact,Coupe,22,14,3105,162900,False,False,False,False,False,True,False,True,False,False,True,2017 Audi R8 Coupe
-1236,Dodge,Ram Pickup 1500,2010,flex-fuel,310,8,AUTOMATIC,4WD,4,Large,Pickup,18,13,1851,31730,False,False,False,False,False,False,False,False,False,False,True,2010 Dodge Ram Pickup 1500 Pickup
-1237,Dodge,Ram Pickup 1500,2010,gasoline,215,6,AUTOMATIC,RWD,4,Large,Pickup,20,14,1851,24665,False,False,False,False,False,False,False,False,False,False,True,2010 Dodge Ram Pickup 1500 Pickup
+1236,Dodge,Ram Pickup 1500,2010,flex-fuel,310,8,AUTOMATIC,4WD,4,Large,Pickup,18,13,1851,31730,True,False,False,False,False,False,False,False,False,False,True,2010 Dodge Ram Pickup 1500 Pickup
+1237,Dodge,Ram Pickup 1500,2010,gasoline,215,6,AUTOMATIC,RWD,4,Large,Pickup,20,14,1851,24665,True,False,False,False,False,False,False,False,False,False,True,2010 Dodge Ram Pickup 1500 Pickup
 1238,Land Rover,Range Rover Evoque,2015,gasoline,240,4,AUTOMATIC,AWD,4,Compact,SUV,30,21,258,60000,False,True,False,False,False,False,False,True,False,False,True,2015 Land Rover Range Rover Evoque SUV
 1239,Land Rover,Range Rover Evoque,2016,gasoline,240,4,AUTOMATIC,AWD,4,Compact,SUV,30,21,258,50475,False,True,False,False,False,False,False,True,False,False,True,2016 Land Rover Range Rover Evoque SUV
 1240,Land Rover,Range Rover Evoque,2017,gasoline,240,4,AUTOMATIC,AWD,4,Compact,SUV,29,21,258,51000,False,True,False,False,False,False,False,True,False,False,True,2017 Land Rover Range Rover Evoque SUV
@@ -1279,9 +1279,9 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 1277,Acura,RDX,2016,gasoline,279,6,AUTOMATIC,FWD,4,Midsize,SUV,29,20,204,36670,False,True,False,False,False,False,False,True,False,False,True,2016 Acura RDX SUV
 1278,Acura,RDX,2017,gasoline,279,6,AUTOMATIC,AWD,4,Midsize,SUV,27,19,204,38370,False,True,False,False,False,False,False,True,False,False,True,2017 Acura RDX SUV
 1279,Buick,Regal,2016,gasoline,259,4,AUTOMATIC,FWD,4,Midsize,Sedan,30,21,155,28565,False,False,False,False,False,False,False,False,True,False,True,2016 Buick Regal Sedan
-1280,Buick,Regal,2016,flex-fuel,182,4,AUTOMATIC,FWD,4,Midsize,Sedan,31,19,155,27065,False,False,False,False,False,False,False,False,False,False,True,2016 Buick Regal Sedan
+1280,Buick,Regal,2016,flex-fuel,182,4,AUTOMATIC,FWD,4,Midsize,Sedan,31,19,155,27065,True,False,False,False,False,False,False,False,False,False,True,2016 Buick Regal Sedan
 1281,Buick,Regal,2017,gasoline,259,4,AUTOMATIC,FWD,4,Midsize,Sedan,29,21,155,31615,False,False,False,False,False,False,False,False,True,False,True,2017 Buick Regal Sedan
-1282,Buick,Regal,2017,flex-fuel,182,4,AUTOMATIC,FWD,4,Midsize,Sedan,30,19,155,27065,False,False,False,False,False,False,False,False,False,False,True,2017 Buick Regal Sedan
+1282,Buick,Regal,2017,flex-fuel,182,4,AUTOMATIC,FWD,4,Midsize,Sedan,30,19,155,27065,True,False,False,False,False,False,False,False,False,False,True,2017 Buick Regal Sedan
 1283,Honda,Ridgeline,2013,gasoline,250,6,AUTOMATIC,4WD,4,Large,Pickup,21,15,2202,37380,True,False,False,False,False,False,False,False,False,False,True,2013 Honda Ridgeline Pickup
 1284,Honda,Ridgeline,2014,gasoline,250,6,AUTOMATIC,4WD,4,Large,Pickup,21,15,2202,37505,True,False,False,False,False,False,False,False,False,False,True,2014 Honda Ridgeline Pickup
 1285,Honda,Ridgeline,2017,gasoline,280,6,AUTOMATIC,AWD,4,Large,Pickup,25,18,2202,37730,True,False,False,False,False,False,False,False,False,False,True,2017 Honda Ridgeline Pickup
@@ -1305,7 +1305,7 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 1303,Nissan,Rogue,2017,gasoline,170,4,AUTOMATIC,FWD,4,Midsize,SUV,33,26,2009,23820,False,True,False,False,False,False,False,False,False,True,False,2017 Nissan Rogue SUV
 1304,Volkswagen,Routan,2010,gasoline,197,6,AUTOMATIC,FWD,4,Midsize,Minivan,23,16,873,33600,True,False,False,False,False,False,False,False,False,False,True,2010 Volkswagen Routan Minivan
 1305,Volkswagen,Routan,2011,gasoline,283,6,AUTOMATIC,FWD,4,Midsize,Minivan,25,17,873,43240,True,False,False,False,False,False,False,False,False,False,True,2011 Volkswagen Routan Minivan
-1306,Volkswagen,Routan,2012,flex-fuel,283,6,AUTOMATIC,FWD,4,Midsize,Minivan,25,17,873,34490,False,False,False,False,False,False,False,False,False,False,True,2012 Volkswagen Routan Minivan
+1306,Volkswagen,Routan,2012,flex-fuel,283,6,AUTOMATIC,FWD,4,Midsize,Minivan,25,17,873,34490,True,False,False,False,False,False,False,False,False,False,True,2012 Volkswagen Routan Minivan
 1307,Audi,RS 5,2013,gasoline,450,8,AUTOMATED_MANUAL,AWD,2,Midsize,Convertible,23,16,3105,77900,False,False,False,True,False,True,False,True,False,False,True,2013 Audi RS 5 Convertible
 1308,Audi,RS 5,2013,gasoline,450,8,AUTOMATED_MANUAL,AWD,2,Midsize,Coupe,23,16,3105,68900,False,False,False,True,False,True,False,True,False,False,True,2013 Audi RS 5 Coupe
 1309,Audi,RS 5,2014,gasoline,450,8,AUTOMATED_MANUAL,AWD,2,Midsize,Coupe,23,16,3105,69600,False,False,False,True,False,True,False,True,False,False,True,2014 Audi RS 5 Coupe
@@ -1368,8 +1368,8 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 1366,Hyundai,Santa Fe,2017,gasoline,290,6,AUTOMATIC,AWD,4,Midsize,SUV,22,17,1439,36700,False,True,False,False,False,False,False,False,False,False,True,2017 Hyundai Santa Fe SUV
 1367,Lexus,SC 430,2010,gasoline,288,8,AUTOMATIC,RWD,2,Compact,Convertible,23,16,454,68405,False,False,False,False,False,False,False,True,True,False,True,2010 Lexus SC 430 Convertible
 1368,Chrysler,Sebring,2010,gasoline,235,6,AUTOMATIC,FWD,2,Midsize,Convertible,27,16,1013,32710,True,False,False,False,False,False,False,False,False,False,True,2010 Chrysler Sebring Convertible
-1369,Chrysler,Sebring,2010,gasoline,173,4,AUTOMATIC,FWD,4,Midsize,Sedan,30,21,1013,22115,False,False,False,False,False,False,False,False,False,False,True,2010 Chrysler Sebring Sedan
-1370,Chrysler,Sebring,2010,flex-fuel,186,6,AUTOMATIC,FWD,2,Midsize,Convertible,26,18,1013,29210,False,False,False,False,False,False,False,False,False,False,True,2010 Chrysler Sebring Convertible
+1369,Chrysler,Sebring,2010,gasoline,173,4,AUTOMATIC,FWD,4,Midsize,Sedan,30,21,1013,22115,True,False,False,False,False,False,False,False,False,False,True,2010 Chrysler Sebring Sedan
+1370,Chrysler,Sebring,2010,flex-fuel,186,6,AUTOMATIC,FWD,2,Midsize,Convertible,26,18,1013,29210,True,False,False,False,False,False,False,False,False,False,True,2010 Chrysler Sebring Convertible
 1371,Kia,Sedona,2015,gasoline,276,6,AUTOMATIC,FWD,4,Midsize,Minivan,25,18,1720,36300,True,False,False,False,False,False,False,False,False,False,True,2015 Kia Sedona Minivan
 1372,Kia,Sedona,2016,gasoline,276,6,AUTOMATIC,FWD,4,Midsize,Minivan,24,18,1720,28500,True,False,False,False,False,False,False,False,False,False,True,2016 Kia Sedona Minivan
 1373,Kia,Sedona,2017,gasoline,276,6,AUTOMATIC,FWD,4,Midsize,Minivan,22,17,1720,41900,True,False,False,False,False,False,False,False,False,False,True,2017 Kia Sedona Minivan
@@ -1395,20 +1395,20 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 1393,GMC,Sierra 1500 Hybrid,2012,gasoline,332,8,AUTOMATIC,RWD,4,Large,Pickup,23,20,549,46790,False,False,False,False,False,False,True,False,False,False,True,2012 GMC Sierra 1500 Hybrid Pickup
 1394,GMC,Sierra 1500 Hybrid,2013,gasoline,332,8,AUTOMATIC,4WD,4,Large,Pickup,23,20,549,51935,False,False,False,False,False,False,True,False,False,False,True,2013 GMC Sierra 1500 Hybrid Pickup
 1395,GMC,Sierra 1500,2015,gasoline,355,8,AUTOMATIC,RWD,4,Large,Pickup,23,16,549,43360,True,False,False,False,False,False,False,False,False,False,True,2015 GMC Sierra 1500 Pickup
-1396,GMC,Sierra 1500,2015,flex-fuel,285,6,AUTOMATIC,4WD,4,Large,Pickup,22,17,549,38540,False,False,False,False,False,False,False,False,False,False,True,2015 GMC Sierra 1500 Pickup
+1396,GMC,Sierra 1500,2015,flex-fuel,285,6,AUTOMATIC,4WD,4,Large,Pickup,22,17,549,38540,True,False,False,False,False,False,False,False,False,False,True,2015 GMC Sierra 1500 Pickup
 1397,GMC,Sierra 1500,2016,gasoline,355,8,AUTOMATIC,4WD,4,Large,Pickup,22,16,549,54240,True,False,False,False,False,False,False,False,False,False,True,2016 GMC Sierra 1500 Pickup
-1398,GMC,Sierra 1500,2016,flex-fuel,285,6,AUTOMATIC,RWD,4,Large,Pickup,24,18,549,36230,False,False,False,False,False,False,False,False,False,False,True,2016 GMC Sierra 1500 Pickup
+1398,GMC,Sierra 1500,2016,flex-fuel,285,6,AUTOMATIC,RWD,4,Large,Pickup,24,18,549,36230,True,False,False,False,False,False,False,False,False,False,True,2016 GMC Sierra 1500 Pickup
 1399,GMC,Sierra 1500,2017,gasoline,355,8,AUTOMATIC,RWD,4,Large,Pickup,23,16,549,44840,True,False,False,False,False,False,False,False,False,False,True,2017 GMC Sierra 1500 Pickup
-1400,GMC,Sierra 1500,2017,flex-fuel,285,6,AUTOMATIC,RWD,4,Large,Pickup,24,18,549,32230,False,False,False,False,False,False,False,False,False,False,True,2017 GMC Sierra 1500 Pickup
+1400,GMC,Sierra 1500,2017,flex-fuel,285,6,AUTOMATIC,RWD,4,Large,Pickup,24,18,549,32230,True,False,False,False,False,False,False,False,False,False,True,2017 GMC Sierra 1500 Pickup
 1401,Chevrolet,Silverado 1500 Hybrid,2011,gasoline,332,8,AUTOMATIC,4WD,4,Large,Pickup,23,20,1385,48205,False,False,False,False,False,False,True,False,False,False,True,2011 Chevrolet Silverado 1500 Hybrid Pickup
 1402,Chevrolet,Silverado 1500 Hybrid,2012,gasoline,332,8,AUTOMATIC,4WD,4,Large,Pickup,23,20,1385,42840,False,False,False,False,False,False,True,False,False,False,True,2012 Chevrolet Silverado 1500 Hybrid Pickup
 1403,Chevrolet,Silverado 1500 Hybrid,2013,gasoline,332,8,AUTOMATIC,4WD,4,Large,Pickup,23,20,1385,51490,False,False,False,False,False,False,True,False,False,False,True,2013 Chevrolet Silverado 1500 Hybrid Pickup
 1404,Chevrolet,Silverado 1500,2015,gasoline,355,8,AUTOMATIC,4WD,4,Large,Pickup,22,16,1385,46110,True,False,False,False,False,False,False,False,False,False,True,2015 Chevrolet Silverado 1500 Pickup
-1405,Chevrolet,Silverado 1500,2015,flex-fuel,285,6,AUTOMATIC,4WD,4,Large,Pickup,22,17,1385,35920,False,False,False,False,False,False,False,False,False,False,True,2015 Chevrolet Silverado 1500 Pickup
-1406,Chevrolet,Silverado 1500,2016,flex-fuel,285,6,AUTOMATIC,RWD,4,Large,Pickup,24,18,1385,35825,False,False,False,False,False,False,False,False,False,False,True,2016 Chevrolet Silverado 1500 Pickup
-1407,Chevrolet,Silverado 1500,2016,gasoline,355,8,AUTOMATIC,RWD,4,Large,Pickup,23,16,1385,39685,False,False,False,False,False,False,False,False,False,False,True,2016 Chevrolet Silverado 1500 Pickup
-1408,Chevrolet,Silverado 1500,2017,flex-fuel,285,6,AUTOMATIC,RWD,4,Large,Pickup,24,18,1385,36035,False,False,False,False,False,False,False,False,False,False,True,2017 Chevrolet Silverado 1500 Pickup
-1409,Chevrolet,Silverado 1500,2017,gasoline,355,8,AUTOMATIC,RWD,4,Large,Pickup,23,16,1385,39230,False,False,False,False,False,False,False,False,False,False,True,2017 Chevrolet Silverado 1500 Pickup
+1405,Chevrolet,Silverado 1500,2015,flex-fuel,285,6,AUTOMATIC,4WD,4,Large,Pickup,22,17,1385,35920,True,False,False,False,False,False,False,False,False,False,True,2015 Chevrolet Silverado 1500 Pickup
+1406,Chevrolet,Silverado 1500,2016,flex-fuel,285,6,AUTOMATIC,RWD,4,Large,Pickup,24,18,1385,35825,True,False,False,False,False,False,False,False,False,False,True,2016 Chevrolet Silverado 1500 Pickup
+1407,Chevrolet,Silverado 1500,2016,gasoline,355,8,AUTOMATIC,RWD,4,Large,Pickup,23,16,1385,39685,True,False,False,False,False,False,False,False,False,False,True,2016 Chevrolet Silverado 1500 Pickup
+1408,Chevrolet,Silverado 1500,2017,flex-fuel,285,6,AUTOMATIC,RWD,4,Large,Pickup,24,18,1385,36035,True,False,False,False,False,False,False,False,False,False,True,2017 Chevrolet Silverado 1500 Pickup
+1409,Chevrolet,Silverado 1500,2017,gasoline,355,8,AUTOMATIC,RWD,4,Large,Pickup,23,16,1385,39230,True,False,False,False,False,False,False,False,False,False,True,2017 Chevrolet Silverado 1500 Pickup
 1410,Mercedes-Benz,SL-Class,2015,gasoline,329,6,AUTOMATIC,RWD,2,Compact,Convertible,27,20,617,84000,False,False,False,False,False,True,False,True,False,False,True,2015 Mercedes-Benz SL-Class Convertible
 1411,Mercedes-Benz,SL-Class,2016,gasoline,449,8,AUTOMATIC,RWD,2,Compact,Convertible,24,17,617,108050,False,False,False,False,False,True,False,True,False,False,True,2016 Mercedes-Benz SL-Class Convertible
 1412,Mercedes-Benz,SL-Class,2017,gasoline,449,8,AUTOMATIC,RWD,2,Compact,Convertible,25,17,617,110800,False,False,False,False,False,True,False,True,False,False,True,2017 Mercedes-Benz SL-Class Convertible
@@ -1472,7 +1472,7 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 1470,Chevrolet,SS,2016,gasoline,415,8,AUTOMATIC,RWD,4,Large,Sedan,20,14,1385,46575,False,False,False,False,False,True,False,False,False,False,True,2016 Chevrolet SS Sedan
 1471,Cadillac,STS,2010,gasoline,302,6,AUTOMATIC,RWD,4,Large,Sedan,27,18,1624,55945,False,False,False,False,False,False,False,True,True,False,True,2010 Cadillac STS Sedan
 1472,Cadillac,STS,2011,gasoline,302,6,AUTOMATIC,RWD,4,Large,Sedan,27,18,1624,47280,False,False,False,False,False,False,False,True,False,False,True,2011 Cadillac STS Sedan
-1473,Chevrolet,Suburban,2015,flex-fuel,355,8,AUTOMATIC,RWD,4,Large,SUV,23,16,1385,54205,False,False,False,False,False,False,False,False,False,False,True,2015 Chevrolet Suburban SUV
+1473,Chevrolet,Suburban,2015,flex-fuel,355,8,AUTOMATIC,RWD,4,Large,SUV,23,16,1385,54205,True,False,False,False,False,False,False,False,False,False,True,2015 Chevrolet Suburban SUV
 1474,Chevrolet,Suburban,2016,flex-fuel,355,8,AUTOMATIC,RWD,4,Large,SUV,23,16,1385,54730,False,False,False,False,False,False,False,False,True,False,True,2016 Chevrolet Suburban SUV
 1475,Chevrolet,Suburban,2017,flex-fuel,355,8,AUTOMATIC,4WD,4,Large,SUV,22,15,1385,58045,False,False,False,False,False,False,False,False,True,False,True,2017 Chevrolet Suburban SUV
 1476,Bentley,Supersports Convertible ISR,2013,flex-fuel,631,12,AUTOMATIC,AWD,2,Midsize,Convertible,19,12,520,291900,False,False,True,True,False,True,False,True,False,False,True,2013 Bentley Supersports Convertible ISR Convertible
@@ -1496,7 +1496,7 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 1494,Chevrolet,Tahoe Hybrid,2011,gasoline,332,8,AUTOMATIC,RWD,4,Large,SUV,23,20,1385,51145,False,False,False,False,False,False,True,False,False,False,True,2011 Chevrolet Tahoe Hybrid SUV
 1495,Chevrolet,Tahoe Hybrid,2012,gasoline,332,8,AUTOMATIC,4WD,4,Large,SUV,23,20,1385,54775,False,False,False,False,False,False,True,False,False,False,True,2012 Chevrolet Tahoe Hybrid SUV
 1496,Chevrolet,Tahoe Hybrid,2013,gasoline,332,8,AUTOMATIC,4WD,4,Large,SUV,23,20,1385,56425,False,False,False,False,False,False,True,True,False,False,True,2013 Chevrolet Tahoe Hybrid SUV
-1497,Chevrolet,Tahoe,2015,flex-fuel,355,8,AUTOMATIC,4WD,4,Large,SUV,22,16,1385,54505,False,False,False,False,False,False,False,False,False,False,True,2015 Chevrolet Tahoe SUV
+1497,Chevrolet,Tahoe,2015,flex-fuel,355,8,AUTOMATIC,4WD,4,Large,SUV,22,16,1385,54505,True,False,False,False,False,False,False,False,False,False,True,2015 Chevrolet Tahoe SUV
 1498,Chevrolet,Tahoe,2016,flex-fuel,355,8,AUTOMATIC,4WD,4,Large,SUV,22,16,1385,64740,False,False,False,False,False,False,False,False,True,False,True,2016 Chevrolet Tahoe SUV
 1499,Chevrolet,Tahoe,2017,flex-fuel,355,8,AUTOMATIC,4WD,4,Large,SUV,22,16,1385,50215,False,False,False,False,False,False,False,False,True,False,True,2017 Chevrolet Tahoe SUV
 1500,Ford,Taurus,2015,flex-fuel,288,6,AUTOMATIC,FWD,4,Large,Sedan,29,19,5657,29485,False,False,False,False,False,False,False,False,True,False,True,2015 Ford Taurus Sedan
@@ -1511,8 +1511,8 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 1509,Volkswagen,Tiguan,2015,gasoline,200,4,AUTOMATIC,AWD,4,Compact,SUV,26,20,873,30225,False,True,False,False,False,False,False,False,False,False,True,2015 Volkswagen Tiguan SUV
 1510,Volkswagen,Tiguan,2016,gasoline,200,4,AUTOMATIC,FWD,4,Compact,SUV,26,21,873,24890,False,True,False,False,False,False,False,False,False,False,True,2016 Volkswagen Tiguan SUV
 1511,Volkswagen,Tiguan,2017,gasoline,200,4,AUTOMATIC,FWD,4,Compact,SUV,24,20,873,30095,False,True,False,False,False,False,False,False,False,False,True,2017 Volkswagen Tiguan SUV
-1512,Nissan,Titan,2014,gasoline,317,8,AUTOMATIC,4WD,4,Large,Pickup,17,12,2009,39780,False,False,False,False,False,False,False,False,False,False,True,2014 Nissan Titan Pickup
-1513,Nissan,Titan,2015,gasoline,317,8,AUTOMATIC,RWD,4,Large,Pickup,18,13,2009,41160,False,False,False,False,False,False,False,False,False,False,True,2015 Nissan Titan Pickup
+1512,Nissan,Titan,2014,gasoline,317,8,AUTOMATIC,4WD,4,Large,Pickup,17,12,2009,39780,True,False,False,False,False,False,False,False,False,False,True,2014 Nissan Titan Pickup
+1513,Nissan,Titan,2015,gasoline,317,8,AUTOMATIC,RWD,4,Large,Pickup,18,13,2009,41160,True,False,False,False,False,False,False,False,False,False,True,2015 Nissan Titan Pickup
 1514,Nissan,Titan,2017,gasoline,390,8,AUTOMATIC,RWD,4,Large,Pickup,21,15,2009,37670,True,False,False,False,False,False,False,False,False,False,True,2017 Nissan Titan Pickup
 1515,Acura,TL,2012,gasoline,305,6,AUTOMATIC,AWD,4,Midsize,Sedan,26,18,204,42985,False,False,False,False,False,False,False,True,True,False,True,2012 Acura TL Sedan
 1516,Acura,TL,2013,gasoline,280,6,AUTOMATIC,FWD,4,Midsize,Sedan,29,20,204,39635,False,False,False,False,False,False,False,True,True,False,True,2013 Acura TL Sedan
@@ -1530,9 +1530,9 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 1528,Volkswagen,Touareg,2016,gasoline,280,6,AUTOMATIC,AWD,4,Midsize,SUV,23,17,873,51450,False,True,False,False,False,False,False,False,True,False,True,2016 Volkswagen Touareg SUV
 1529,Volkswagen,Touareg,2016,diesel,240,6,AUTOMATIC,AWD,4,Midsize,SUV,29,21,873,54950,False,True,False,False,False,False,False,False,False,False,True,2016 Volkswagen Touareg SUV
 1530,Volkswagen,Touareg,2017,gasoline,280,6,AUTOMATIC,AWD,4,Midsize,SUV,23,17,873,49495,False,True,False,False,False,False,False,False,False,False,True,2017 Volkswagen Touareg SUV
-1531,Chrysler,Town and Country,2014,flex-fuel,283,6,AUTOMATIC,FWD,4,Midsize,Minivan,25,17,1013,32995,False,False,False,False,False,False,False,False,False,False,True,2014 Chrysler Town and Country Minivan
-1532,Chrysler,Town and Country,2015,flex-fuel,283,6,AUTOMATIC,FWD,4,Midsize,Minivan,25,17,1013,29995,False,False,False,False,False,False,False,False,False,False,True,2015 Chrysler Town and Country Minivan
-1533,Chrysler,Town and Country,2016,flex-fuel,283,6,AUTOMATIC,FWD,4,Midsize,Minivan,25,17,1013,35845,False,False,False,False,False,False,False,False,False,False,True,2016 Chrysler Town and Country Minivan
+1531,Chrysler,Town and Country,2014,flex-fuel,283,6,AUTOMATIC,FWD,4,Midsize,Minivan,25,17,1013,32995,True,False,False,False,False,False,False,False,False,False,True,2014 Chrysler Town and Country Minivan
+1532,Chrysler,Town and Country,2015,flex-fuel,283,6,AUTOMATIC,FWD,4,Midsize,Minivan,25,17,1013,29995,True,False,False,False,False,False,False,False,False,False,True,2015 Chrysler Town and Country Minivan
+1533,Chrysler,Town and Country,2016,flex-fuel,283,6,AUTOMATIC,FWD,4,Midsize,Minivan,25,17,1013,35845,True,False,False,False,False,False,False,False,False,False,True,2016 Chrysler Town and Country Minivan
 1534,Lincoln,Town Car,2010,flex-fuel,239,8,AUTOMATIC,RWD,4,Large,Sedan,24,16,61,52595,False,False,False,False,False,False,False,True,False,False,True,2010 Lincoln Town Car Sedan
 1535,Lincoln,Town Car,2011,flex-fuel,239,8,AUTOMATIC,RWD,4,Large,Sedan,24,16,61,47225,False,False,False,False,False,False,False,True,False,False,True,2011 Lincoln Town Car Sedan
 1536,Ford,Transit Connect,2015,gasoline,169,4,AUTOMATIC,FWD,4,Compact,Minivan,28,20,5657,26710,True,False,False,False,False,False,False,False,False,False,True,2015 Ford Transit Connect Minivan
@@ -1575,7 +1575,7 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 1573,Hyundai,Tucson,2017,gasoline,164,4,AUTOMATIC,FWD,4,Compact,SUV,30,23,1439,22700,False,True,False,False,False,False,False,False,False,True,False,2017 Hyundai Tucson SUV
 1574,Hyundai,Tucson,2017,gasoline,175,4,AUTOMATED_MANUAL,FWD,4,Compact,SUV,30,25,1439,29775,False,True,False,False,False,False,False,False,False,True,False,2017 Hyundai Tucson SUV
 1575,Toyota,Tundra,2015,gasoline,310,8,AUTOMATIC,4WD,4,Large,Pickup,18,14,2031,33210,True,False,False,False,False,False,False,False,False,False,True,2015 Toyota Tundra Pickup
-1576,Toyota,Tundra,2015,flex-fuel,381,8,AUTOMATIC,4WD,4,Large,Pickup,17,13,2031,33060,False,False,False,False,False,False,False,False,False,False,True,2015 Toyota Tundra Pickup
+1576,Toyota,Tundra,2015,flex-fuel,381,8,AUTOMATIC,4WD,4,Large,Pickup,17,13,2031,33060,True,False,False,False,False,False,False,False,False,False,True,2015 Toyota Tundra Pickup
 1577,Toyota,Tundra,2016,gasoline,381,8,AUTOMATIC,4WD,4,Large,Pickup,17,13,2031,34220,True,False,False,False,False,False,False,False,False,False,True,2016 Toyota Tundra Pickup
 1578,Toyota,Tundra,2017,gasoline,381,8,AUTOMATIC,4WD,2,Large,Pickup,17,13,2031,33450,True,False,False,False,False,False,False,False,False,False,True,2017 Toyota Tundra Pickup
 1579,Aston Martin,V12 Vantage S,2015,gasoline,565,12,AUTOMATED_MANUAL,RWD,2,Compact,Coupe,18,12,259,182395,False,False,True,False,False,True,False,False,False,False,True,2015 Aston Martin V12 Vantage S Coupe
@@ -1692,13 +1692,13 @@ carId,Make,Model,Year,Engine Fuel Type,Engine HP,Engine Cylinders,Transmission T
 1690,GMC,Yukon Hybrid,2011,gasoline,332,8,AUTOMATIC,4WD,4,Large,SUV,23,20,549,54420,False,False,False,False,False,False,True,True,False,False,True,2011 GMC Yukon Hybrid SUV
 1691,GMC,Yukon Hybrid,2012,gasoline,332,8,AUTOMATIC,4WD,4,Large,SUV,23,20,549,55280,False,False,False,False,False,False,True,True,False,False,True,2012 GMC Yukon Hybrid SUV
 1692,GMC,Yukon Hybrid,2013,gasoline,332,8,AUTOMATIC,RWD,4,Large,SUV,23,20,549,54145,False,False,False,False,False,False,True,True,False,False,True,2013 GMC Yukon Hybrid SUV
-1693,GMC,Yukon XL,2015,flex-fuel,355,8,AUTOMATIC,4WD,4,Large,SUV,22,15,549,61925,False,False,False,False,False,False,False,False,False,False,True,2015 GMC Yukon XL SUV
+1693,GMC,Yukon XL,2015,flex-fuel,355,8,AUTOMATIC,4WD,4,Large,SUV,22,15,549,61925,True,False,False,False,False,False,False,False,False,False,True,2015 GMC Yukon XL SUV
 1694,GMC,Yukon XL,2015,gasoline,420,8,AUTOMATIC,RWD,4,Large,SUV,21,15,549,67220,False,False,False,False,False,False,False,False,True,False,True,2015 GMC Yukon XL SUV
 1695,GMC,Yukon XL,2016,flex-fuel,355,8,AUTOMATIC,RWD,4,Large,SUV,23,16,549,51015,False,False,False,False,False,False,False,False,True,False,True,2016 GMC Yukon XL SUV
 1696,GMC,Yukon XL,2016,gasoline,420,8,AUTOMATIC,RWD,4,Large,SUV,22,15,549,68025,False,False,False,False,False,False,False,False,True,False,True,2016 GMC Yukon XL SUV
 1697,GMC,Yukon XL,2017,flex-fuel,355,8,AUTOMATIC,4WD,4,Large,SUV,22,15,549,54230,False,False,False,False,False,False,False,False,True,False,True,2017 GMC Yukon XL SUV
 1698,GMC,Yukon XL,2017,gasoline,420,8,AUTOMATIC,RWD,4,Large,SUV,22,15,549,68665,False,False,False,False,False,False,False,False,True,False,True,2017 GMC Yukon XL SUV
-1699,GMC,Yukon,2015,flex-fuel,355,8,AUTOMATIC,4WD,4,Large,SUV,22,16,549,50740,False,False,False,False,False,False,False,False,False,False,True,2015 GMC Yukon SUV
+1699,GMC,Yukon,2015,flex-fuel,355,8,AUTOMATIC,4WD,4,Large,SUV,22,16,549,50740,True,False,False,False,False,False,False,False,False,False,True,2015 GMC Yukon SUV
 1700,GMC,Yukon,2015,gasoline,420,8,AUTOMATIC,RWD,4,Large,SUV,21,15,549,64520,True,False,False,False,False,False,False,False,False,False,True,2015 GMC Yukon SUV
 1701,GMC,Yukon,2016,gasoline,420,8,AUTOMATIC,RWD,4,Large,SUV,22,15,549,65325,False,False,False,False,False,False,False,False,True,False,True,2016 GMC Yukon SUV
 1702,GMC,Yukon,2016,flex-fuel,355,8,AUTOMATIC,4WD,4,Large,SUV,22,16,549,51315,False,False,False,False,False,False,False,False,True,False,True,2016 GMC Yukon SUV
