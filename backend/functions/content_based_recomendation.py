@@ -12,6 +12,11 @@ def get_content_based_recommendation(
     sim_cars = [i[0] for i in sim_scores]
 
     car_df = data
+    car_df = car_df.loc[
+        (car_df["MSRP"] > car.min_price)
+        & (car_df["MSRP"] < car.max_price)
+        & (car_df["Engine Fuel Type"] == fuel_dictionary[car.fuel])
+    ]
     rng = random.randint(100)
     car_df = car_df.sample(n=len(car_df), random_state=rng)
 
