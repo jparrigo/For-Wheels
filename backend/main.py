@@ -39,14 +39,14 @@ def get_recomendation():
     car_max_price = data["max_price"]
 
     partial_car = Car(
-        float(car_min_price),
-        float(car_max_price),
-        data["city_preference"],
-        data["size"],
-        data["transmission"],
         data["fuel"],
-        data["category"],
+        data["transmission"],
+        data["size"],
         data["style"],
+        int(car_min_price),
+        int(car_max_price),
+        data["category"],
+        data["city_preference"],
     )
 
     abort_data_not_found(partial_car)
@@ -59,7 +59,12 @@ def get_recomendation():
     cosine_sim = get_cosine_similarity(partial_car)
 
     recommended_cars = get_content_based_recommendation(
-        partial_car.car_id, df_cars, cosine_sim, car_min_price, car_max_price, n_recommendation=5
+        partial_car,
+        df_cars,
+        cosine_sim,
+        car_min_price,
+        car_max_price,
+        n_recommendation=5,
     )
 
     unused_columns = [

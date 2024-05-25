@@ -5,6 +5,14 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 def get_cosine_similarity(car_data):
     cars_numeric = pd.read_csv("./data/cars_dataset_numbers.csv")
+
+    cars_numeric = cars_numeric.loc[
+        (cars_numeric["MSRP"] > car_data.min_price)
+        & (cars_numeric["MSRP"] < car_data.max_price)
+        & (cars_numeric["Engine Fuel Type"] == car_data.fuel)
+    ]
+    car_data.car_id = len(cars_numeric)
+
     sample_car = [
         car_data.car_id,
         car_data.fuel,
@@ -29,6 +37,7 @@ def get_cosine_similarity(car_data):
         car_data.city_preference,
         (car_data.city_preference != True),
     ]
+
     cars_numeric.loc[len(cars_numeric)] = sample_car
     used_column = [
         # "carId",
