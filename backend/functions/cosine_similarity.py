@@ -10,6 +10,7 @@ def get_cosine_similarity(car_data):
         (cars_numeric["MSRP"] > car_data.min_price)
         & (cars_numeric["MSRP"] < car_data.max_price)
         & (cars_numeric["Engine Fuel Type"] == car_data.fuel)
+        & (cars_numeric["Transmission Type"] == car_data.transmission)
     ]
     car_data.car_id = len(cars_numeric)
 
