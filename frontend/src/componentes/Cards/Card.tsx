@@ -29,7 +29,7 @@ function traduzir (car: CarsListRet) {
     car["Category"] = "Comum"
 
   } else if (car["Crossover"] == true){
-    car["Category"] = "CrossOver"
+    car["Category"] = "Crossover"
 
   } else if (car["Exotic"] == true){
     car["Category"] = "Exótico"
@@ -61,7 +61,7 @@ function traduzir (car: CarsListRet) {
   } else if (car["Engine Fuel Type"] == "diesel") {
     car["Engine Fuel Type"] = "Diesel"
 
-  } else if (car["Engine Fuel Type"] == "flex") {
+  } else if (car["Engine Fuel Type"] == "flex-fuel") {
     car["Engine Fuel Type"] = "Flex"
 
   } else if (car["Engine Fuel Type"] == "electric") {
@@ -73,7 +73,7 @@ function traduzir (car: CarsListRet) {
   if (car["Vehicle Style"] == "Coupe") {
     car["Vehicle Style"] = "Cupê"
 
-  } else if (car["Vehicle Style"] == "Covertible") {
+  } else if (car["Vehicle Style"] == "Convertible") {
     car["Vehicle Style"] = "Conversível"
 
   } else if (car["Vehicle Style"] == "Hatchback") {
@@ -83,7 +83,7 @@ function traduzir (car: CarsListRet) {
     car["Vehicle Style"] = "Picape"
 
   } else if (car["Vehicle Style"] == "Wagon") {
-    car["Vehicle Style"] = "Caminhão"
+    car["Vehicle Style"] = "Perua"
 
   } else if (car["Vehicle Style"] == "Minivan") {
     car["Vehicle Style"] = "Mini Van"

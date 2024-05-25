@@ -1,17 +1,22 @@
 .card-section {
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
   background-color: #242424;
   border-radius: 5px;
   border-width: 2px;
   border-color: #606060;
   border-style: solid;
   padding: 10px;
-  width: 14vw;
+  width: 14.5vw;
+  height: 400px;
 }
 
-.card-content {
+.card-content { 
+  display: grid;
   text-align: left;
   padding: 10px;
+  height: 100%;
+  justify-content: space-between;
 }
 
 
@@ -23,6 +28,8 @@
 .card-info {
   margin-top: 15%;
   text-align: start;
+  height: fit-content;
+  align-self: flex-end;
 }
 
 .card-info-title {

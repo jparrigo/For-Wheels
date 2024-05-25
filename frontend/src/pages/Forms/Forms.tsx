@@ -1,11 +1,11 @@
 import "./Forms.css";
 import logo from "../../assets/logo.png";
 import {Button, Checkbox, ConfigProvider, Input, Radio, Space, message } from "antd";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import LeftBar from "../../componentes/LeftBar/LeftBar";
 import { useNavigate } from "react-router-dom";
 import setListCarsSaves from "../../assets/functions/setListCarsSaves";
-import axios, { AxiosError } from "axios";
+import axios from "axios";
 
 const preferenciaDeUso = [
   { label: "Estrada", value: "highway mpg" },
@@ -56,8 +56,8 @@ const estilo = [
 ];
 
 export default function Forms() {
-  const [precoDe, setPrecoDe] = useState(0)
-  const [precoAte, setPrecoAte] = useState(0)
+  const [precoDe, SetPrecoDe] = useState<number>(11965)
+  const [precoAte, SetPrecoAte] = useState<number>(1382750)
   const [preferenciaDeUsoState, setPreferenciaDeUsoState] = useState('highway mpg')
   const [tamanhoState, setTamanhoState] = useState('Compact')
   const [transmissaoState, setTransmissaoState] = useState('AUTOMATIC')
@@ -67,17 +67,32 @@ export default function Forms() {
 
   const navigate = useNavigate();
 
-  async function pesquisarCarro() {
-    if (precoDe>precoAte || Number.isNaN(precoAte) || precoDe < 0 || precoAte < 0) {
-      message.warning('Insira a Faixa de Preço corretamente.');
+  useEffect(() => {
+    console.log('rerender')
+  },[precoDe,precoAte])
 
-    } else {
+  async function pesquisarCarro() {
+    if (precoDe>precoAte || Number.isNaN(precoAte) || precoDe < 0 || precoAte <= 0) {
+      message.warning('Insira a Faixa de Preço corretamente.');
+    } 
+    else if (categoriaState.length == 0) {
+      message.warning('Escolha pelo menos 1 categoria.')
+    } 
+    else {
       if (Number.isNaN(precoDe)) {
-        setPrecoDe(0)
+        SetPrecoDe(0)
       }
 
       if (Number.isNaN(precoAte)) {
-        setPrecoAte(0)
+        SetPrecoAte(0)
+      }
+      
+      if (precoDe < 11965) {
+        SetPrecoDe(11965)
+      }
+
+      if (precoAte > 1382750) {
+        SetPrecoDe(1382750)
       }
 
       const category = []
@@ -92,6 +107,7 @@ export default function Forms() {
       category.push(categoriaState.includes('Luxury') ? true : false)
       category.push(categoriaState.includes('Performance') ? true : false)
 
+
       const carro = {
         "min_price": precoDe,
         "max_price": precoAte,
@@ -102,18 +118,21 @@ export default function Forms() {
         "category": category,
         "style": estiloState
       }
-      console.log(carro);
       try {
         const getRecommendation = await axios.post('http://127.0.0.1:5000/cars/get-recommendation', carro)
 
-        setListCarsSaves(getRecommendation.data);
-        navigate('/resultado',{state: { listCars: getRecommendation.data }});
+        if (getRecommendation.data.length == 0) {
+          message.error('Não foi possível encontrar um carro. Tente alterar algum parâmetro.')
+        } else {
+          setListCarsSaves(getRecommendation.data);
+          navigate('/resultado',{state: { listCars: getRecommendation.data }});
+        }
       } catch (err) {
-        message.error('Não foi possível recomendar. Altera os parâmetros da busca.')
+        message.error('Não Existe um carro com essas características. Altere os parâmetros da busca.')
       }
     }
   }
-
+  
   return (
     <nav className="home-nav">
       <LeftBar />
@@ -129,10 +148,10 @@ export default function Forms() {
             <h1>Faixa de preço do veículo</h1>
             <Space.Compact>
               <Input type="number" value={precoDe} onChange={({target: {valueAsNumber}}) => {
-                setPrecoDe(valueAsNumber)
+                SetPrecoDe(valueAsNumber)
               }} placeholder="de" />
               <Input type="number" value={precoAte} onChange={({target: {valueAsNumber}}) => {
-                setPrecoAte(valueAsNumber)
+                SetPrecoAte(valueAsNumber)
               }} placeholder="até" />
             </Space.Compact>
           </section>

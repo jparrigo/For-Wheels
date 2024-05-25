@@ -8,7 +8,9 @@ import { CarsListRet } from "../../assets/models/CarsListRet";
 export default function Resultado() {
   const params = useLocation().state
   const cars = params.listCars;
-
+  console.log('---------------------------------')
+  console.log(cars)
+  
   return (
     <nav className="home-nav">
       <LeftBar />
