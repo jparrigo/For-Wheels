@@ -1,0 +1,29 @@
+.forms-div {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forms-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.forms-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.forms-fields {
+  background-color: #222222;
+  width: 85%;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-y: scroll;
+}

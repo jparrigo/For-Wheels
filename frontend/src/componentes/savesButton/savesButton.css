@@ -1,0 +1,17 @@
+.saves-button {
+  height: 35px;
+  padding: 8px;
+  background-color: #2F2F2F;
+  border-width: 0;
+  border-radius: 6px;
+  color: #898989;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.saves-button svg {
+  width: 16px;
+  fill: rgb(233, 69, 69);
+}

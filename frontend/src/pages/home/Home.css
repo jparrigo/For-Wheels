@@ -1,8 +1,0 @@
-.home-div {
-  display: grid;
-  grid-template-columns: 0fr 1fr;
-}
-
-.home-div section {
-  width: 100vw;
-}

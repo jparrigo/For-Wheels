@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Nunito", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -19,4 +19,11 @@ body {
   box-sizing: border-box;
   place-items: center;
   min-height: 100vh;
+}
+
+.home-nav {
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+  width: 100vw;
+  height: 100vh;
 }
