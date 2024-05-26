@@ -8,7 +8,7 @@ interface CardProps {
 }
 
 function traduzir (car: CarsListRet) {
-
+  car.Category = ""
 
   if (car["Transmission Type"] == "AUTOMATIC"){
     car["Transmission Type"] = "Automático"
@@ -21,35 +21,42 @@ function traduzir (car: CarsListRet) {
 
   } else if (car["Transmission Type"] == "DIRECT_DRIVE") {
     car["Transmission Type"] = "Direct Drive"
-  } 
-
+  }
 
 
   if (car["Common"] == true){
-    car["Category"] = "Comum"
+    car["Category"] += "Comum, "
 
-  } else if (car["Crossover"] == true){
-    car["Category"] = "Crossover"
+  } 
+  if (car["Crossover"] == true){
+    car["Category"] += "Crossover, "
 
-  } else if (car["Exotic"] == true){
-    car["Category"] = "Exótico"
+  }
+  if (car["Exotic"] == true){
+    car["Category"] += "Exótico, "
 
-  } else if (car["Factory Tuner"] == true){
-    car["Category"] = "Tuner de Fábrica"
+  }
+  if (car["Factory Tuner"] == true){
+    car["Category"] += "Tuner de Fábrica, "
 
-  } else if (car["Hatchback"] == true){
-    car["Category"] = "Hatchback"
+  }
+  if (car["Hatchback"] == true){
+    car["Category"] += "Hatchback, "
 
-  } else if (car["High-Performance"] == true){
-    car["Category"] = "Alta Performance"
+  }
+  if (car["High-Performance"] == true){
+    car["Category"] += "Alta Performance, "
 
-  } else if (car["Hybrid"] == true){
-    car["Category"] = "Híbrido"
+  }
+  if (car["Hybrid"] == true){
+    car["Category"] += "Híbrido, "
 
-  } else if (car["Luxury"] == true){
+  }
+  if (car["Luxury"] == true){
     car["Category"] = "Luxuoso"
 
-  } else if (car["Performance"] == true){
+  }
+  if (car["Performance"] == true){
     car["Category"] = "Performance"
   }
 
@@ -108,6 +115,7 @@ export default function Card(props: CardProps) {
         <div className="card-info">
           <span className="card-info-title">Ficha Técnica</span>
           <div style={{display: "flex",justifyContent: 'center', flexDirection: 'column'}}>
+            <ItemInfo title="Preço" info={`$${car.MSRP}`}/>
             <ItemInfo title="Transmissão" info={car["Transmission Type"]}/>
             <ItemInfo title="Potência" info={car["Engine HP"]+"cv"}/>
             <ItemInfo title="Combustível" info={car["Engine Fuel Type"]}/>

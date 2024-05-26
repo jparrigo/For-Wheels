@@ -9,7 +9,7 @@ interface ItemInfoProps {
 const ItemInfo = (props: ItemInfoProps): ReactElement => {
     return (
         <div style={{ marginTop: 5 }}>
-            <span>{props.title}: </span>
+            <span style={{fontWeight: 'bold'}}>{props.title}: </span>
             <span>{props.info}</span>
         </div>
     )
